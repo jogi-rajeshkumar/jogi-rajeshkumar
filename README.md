@@ -75,15 +75,15 @@ I design and deploy AI-powered, cloud-native systems with an emphasis on solving
 ## 📊 GitHub Insights
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rajeshkumarjogi&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rajeshkumarjogi&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rajogi-rajeshkumar&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajeshkumarjogi&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
@@ -96,5 +96,5 @@ I design and deploy AI-powered, cloud-native systems with an emphasis on solving
 
 ---
 
-<p align="center"><i>Auto-generated on June 17, 2025 04:44 UTC</i></p>
+<p align="center"><i>Auto-generated on June 17, 2025 04:52 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
