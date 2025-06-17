@@ -1,89 +1,94 @@
-# 👋 Hi, I'm Rajesh Kumar Jogi
+<h1 align="center">Hey there 👋, I'm Rajesh Kumar Jogi</h1>
 
-Welcome to my GitHub space! I'm a Master's student in **Artificial Intelligence** at the **University of East London**, passionate about building AI-powered and cloud-native solutions that drive real-world impact.
+<p align="center">
+  <em>AI Enthusiast | Cloud Developer | Open-Source Builder</em><br>
+  MSc Artificial Intelligence @ University of East London (2024–2026)<br>
+  📍 Coventry, United Kingdom
+</p>
 
-From healthcare apps like **Rudhira**, to smart assistants using **face recognition**, to **big data pipelines** in PySpark — I love transforming ideas into working systems.
-
----
-
-## 🧾 Resume Summary
-
-### 📍 Coventry, United Kingdom  
-📧 rajeshkumarjogi.2098@gmail.com  
-📞 +44 7916 601 225  
-
-### 🎯 Personal Statement  
-I’m a kind, diligent individual with hands-on experience in hospitality and a strong academic foundation in AI. I enjoy teamwork, staying active, and completing my tasks to the highest standard. Currently seeking part-time opportunities where I can add value and keep learning daily.
+<p align="center">
+  <a href="mailto:rajeshkumarjogi.2098@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/rajeshkumarjogi"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/jogi-rajesh-kumar/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"/></a>
+  <a href="https://coff.ee/rajeshkumaw"><img src="https://img.shields.io/badge/Sponsor-FFDD00?style=flat&logo=buy-me-a-coffee&logoColor=black"/></a>
+</p>
 
 ---
 
-### 🎓 Education  
-**MSc Artificial Intelligence (with Industrial Placement)**  
-_University of East London_ — *Sept 2024 – May 2026 (Expected)*
+## 🧠 About Me
 
-**B.Tech in Computer Science & Engineering**  
-_Koneru Lakshmaiah Education Foundation_ — *2016 – 2020*
+I'm a passionate AI and software developer, deeply interested in solving **real-world problems** through intelligent systems. From blood donation apps to smart assistants and big data pipelines — I turn ideas into **impactful code**.
+
+I'm also experienced in hospitality, a quick learner, and I love working with diverse teams and tools.
 
 ---
 
-### 💼 Work Experience  
+## 📜 Resume Snapshot
 
 **Hospitality Assistant**  
-_Hyde Park Court Hotel, London, UK_  
-*Nov 2024 – May 2025*  
+_Hyde Park Court Hotel, London (Nov 2024 – May 2025)_  
+• Served English breakfasts  
+• Maintained room & kitchen hygiene  
+• Housekeeping & guest interaction  
 
-- Prepared and served guest English breakfasts  
-- Maintained kitchen hygiene and cleaned utensils  
-- Made beds, cleaned bathrooms, and restocked supplies daily  
-- Reported maintenance issues and ensured guest satisfaction  
-- Delivered professional service during high-pressure hours
-
----
-
-### 🧠 Skills  
-- Excellent time management & reliability  
-- Strong attention to cleanliness and detail  
-- Quick learner, follows instructions accurately  
-- Independent worker comfortable with physical tasks  
-- Friendly, multilingual communicator (English, Telugu, Hindi)
+**Education**  
+🎓 MSc Artificial Intelligence – *University of East London* (2024–2026)  
+🎓 B.Tech CSE – *KL University* (2016–2020)  
 
 ---
 
-## 🚀 Featured Projects
+## 🛠️ Skills & Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,spark,flask,react,firebase,aws,mysql,postgresql,git,figma,linux" />
+</p>
+
+---
+
+## 💼 Featured Projects
 
 | Project | Description |
 |--------|-------------|
-| [🩸 Rudhira](https://github.com/rajeshkumarjogi/rudhira) | A mobile-first blood donation app with real-time donor-recipient matching, OTP login, encrypted chat, and multilingual support |
-| 🤖 Jarvis AI | A Flask-based face recognition app with live webcam, detection logs, and CSV logging of age, gender, and emotion |
-| 📊 CN7030 ML Pipeline | A network flow classification system using PySpark + Random Forest on big data |
-| 📍 Tableau Dashboard | A City of Toronto data dashboard for crime and public safety insights |
+| [🩸 Rudhira](https://github.com/rajeshkumarjogi/rudhira) | A mobile-first blood donation app with real-time donor-recipient matching and OTP-secured login |
+| 🤖 Jarvis AI | A face recognition assistant using Flask, webcam stream, and CSV-based detection logs |
+| 📊 CN7030 ML Pipeline | PySpark classification project on network data using Random Forest & model evaluation |
+| 📍 Toronto Tableau Dashboard | Public safety visualization using Toronto open datasets for strategic insights |
 
 ---
 
-## ⚙️ Tech Stack
+## 🏆 Certifications
 
-| Category | Tools |
-|---------|-------|
-| Languages & AI | Python, PyTorch, TensorFlow, Spark ML |
-| Web & Backend | Flask, Express.js |
-| Mobile | Flutter / React Native |
-| Cloud & DB | AWS, Firebase, MySQL, PostgreSQL |
-| Tools | Git, Postman, Figma, Tableau, Jupyter |
+- ✅ [AWS Cloud Practitioner Essentials](https://www.credly.com/badges/example1)
+- ✅ [Introduction to TensorFlow for AI by DeepLearning.AI](https://coursera.org/verify/example2)
+- ✅ [Data Science Methodology – IBM Skills Network](https://coursera.org/verify/example3)
+- ✅ [Python for Everybody – University of Michigan](https://coursera.org/verify/example4)
+
+> *(Replace the links above with your actual certification URLs)*
 
 ---
 
-## ☕ Sponsor My Work  
-If you find my work valuable and want to support future development, you can sponsor me here:
+## ☕ Support My Work
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://coff.ee/rajeshkumaw)
+If you appreciate my work and want to support future open-source efforts:
+
+<p align="center">
+  <a href="https://coff.ee/rajeshkumaw">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
+  </a>
+</p>
 
 ---
 
 ## 📫 Let's Connect
-- 📧 Email: [rajeshkumarjogi.2098@gmail.com](mailto:rajeshkumarjogi.2098@gmail.com)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/jogi-rajesh-kumar/)  
+
+- 📧 [Email Me](mailto:rajeshkumarjogi.2098@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jogi-rajesh-kumar/)
 - 💻 [GitHub](https://github.com/rajeshkumarjogi)
 
 ---
 
-> _“Technology, when applied with empathy, has the power to change lives.”_
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rajeshkumarjogi&show_icons=true&theme=radical" />
+</p>
+
+<p align="center"><i>“Technology, when applied with empathy, has the power to change lives.”</i></p>
