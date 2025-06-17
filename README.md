@@ -24,16 +24,21 @@ I'm currently pursuing an MSc in Artificial Intelligence at the University of Ea
 
 ---
 
-🧠 AI & Machine Learning
-<p align="center"> <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,keras" /> </p>
-🌐 Web & App Development
-<p align="center"> <img src="https://skillicons.dev/icons?i=js,html,css,flask,django" /> </p>
-🗃️ Databases & Querying
-<p align="center"> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,sql" /> </p>
+🛠️ Technical Skills
+💻 Programming Languages
+<p> <img src="https://skillicons.dev/icons?i=python,js,html,css,sql" alt="Languages" /> <br><strong>Languages:</strong> Python, JavaScript, HTML5, CSS3, SQL </p>
+🤖 Machine Learning & AI Frameworks
+<p> <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" alt="ML Frameworks" /> <br><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras, Hugging Face Transformers <br><strong>Libraries:</strong> OpenCV, Dlib, Pandas, NumPy, CNNs </p>
+🌐 Web Development
+<p> <img src="https://skillicons.dev/icons?i=flask,django" alt="Web Dev" /> <br><strong>Backends:</strong> Flask, Django, RESTful APIs <br><strong>Packaging:</strong> PyInstaller, Electron </p>
+🗄️ Databases
+<p> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb" alt="Databases" /> <br><strong>Databases:</strong> MySQL, MSSQL, PostgreSQL, MongoDB </p>
 ☁️ Cloud & DevOps
-<p align="center"> <img src="https://skillicons.dev/icons?i=aws,docker,linux,git" /> </p>
-🧰 Tools & Editors
-<p align="center"> <img src="https://skillicons.dev/icons?i=vscode" /> </p>
+<p> <img src="https://skillicons.dev/icons?i=aws,docker,git,github,linux" alt="Cloud & DevOps" /> <br><strong>AWS Stack:</strong> Amplify, EC2, RDS, S3, Route 53, Elastic Beanstalk, App Runner, ECR <strong>DevOps:</strong> Docker, Git, GitHub, Linux </p>
+🔐 Cybersecurity & InfoSec
+<p> <img src="https://img.shields.io/badge/Cyber%20Skills-Ethical%20Hacking%20%7C%20SQL%20Injection%20%7C%20Juniper%20Router%20Config-blueviolet?style=flat-square&logo=hackclub&logoColor=white" /> <br><strong>Skills:</strong> Ethical Hacking, Information Security Threats, SQL Injection, Juniper SRX Router Config </p>
+🧰 Tools & Platforms
+<p> <img src="https://skillicons.dev/icons?i=spark,vscode" alt="Tools" /> <br><strong>Tools:</strong> Apache Spark, Visual Studio Code, MS Office, Linux </p>
 ---
 
 ## 🎓 Education
@@ -129,5 +134,5 @@ If you like my work and want to support future projects:
 ---
 
 
-<p align="center"><i>Auto-generated on June 17, 2025 06:07 UTC</i></p>
+<p align="center"><i>Auto-generated on June 17, 2025 06:09 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
