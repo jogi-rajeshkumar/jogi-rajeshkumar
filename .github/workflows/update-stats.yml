@@ -2,12 +2,13 @@ name: 🔄 Auto-Generate README
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Every day at 6AM UTC
+    - cron: "0 6 * * *"  # Every day at 6 AM UTC
   workflow_dispatch:
 
 jobs:
   build-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -17,13 +18,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run Script
-        run: python generate_readme.py
+      - name: Run README Generator Script
+        run: |
+          python generate_readme.py
 
       - name: Commit Changes
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add README.md
-          git commit -m "📝 Auto-update README" || echo "No changes"
+          git commit -m "📝 Auto-update README from script" || echo "No changes"
           git push
