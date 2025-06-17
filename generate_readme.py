@@ -83,7 +83,7 @@ I design and deploy AI-powered, cloud-native systems with an emphasis on solving
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rajogi-rajeshkumar&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
 </p>
 
 <p align="center">
