@@ -24,21 +24,9 @@ I'm currently pursuing an MSc in Artificial Intelligence at the University of Ea
 
 ---
 
-🛠️ Technical Skills
-💻 Programming Languages
-<p> <img src="https://skillicons.dev/icons?i=python,js,html,css,sql" alt="Languages" /> <br><strong>Languages:</strong> Python, JavaScript, HTML5, CSS3, SQL </p>
-🤖 Machine Learning & AI Frameworks
-<p> <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" alt="ML Frameworks" /> <br><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras, Hugging Face Transformers <br><strong>Libraries:</strong> OpenCV, Dlib, Pandas, NumPy, CNNs </p>
-🌐 Web Development
-<p> <img src="https://skillicons.dev/icons?i=flask,django" alt="Web Dev" /> <br><strong>Backends:</strong> Flask, Django, RESTful APIs <br><strong>Packaging:</strong> PyInstaller, Electron </p>
-🗄️ Databases
-<p> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb" alt="Databases" /> <br><strong>Databases:</strong> MySQL, MSSQL, PostgreSQL, MongoDB </p>
-☁️ Cloud & DevOps
-<p> <img src="https://skillicons.dev/icons?i=aws,docker,git,github,linux" alt="Cloud & DevOps" /> <br><strong>AWS Stack:</strong> Amplify, EC2, RDS, S3, Route 53, Elastic Beanstalk, App Runner, ECR <strong>DevOps:</strong> Docker, Git, GitHub, Linux </p>
-🔐 Cybersecurity & InfoSec
-<p> <img src="https://img.shields.io/badge/Cyber%20Skills-Ethical%20Hacking%20%7C%20SQL%20Injection%20%7C%20Juniper%20Router%20Config-blueviolet?style=flat-square&logo=hackclub&logoColor=white" /> <br><strong>Skills:</strong> Ethical Hacking, Information Security Threats, SQL Injection, Juniper SRX Router Config </p>
-🧰 Tools & Platforms
-<p> <img src="https://skillicons.dev/icons?i=spark,vscode" alt="Tools" /> <br><strong>Tools:</strong> Apache Spark, Visual Studio Code, MS Office, Linux </p>
+🧰 Technical Arsenal
+<table> <tr> <td><strong>👨‍💻 Programming</strong></td> <td> <img src="https://skillicons.dev/icons?i=python,js,html,css,sql" /><br/> <code>Python</code>, <code>JavaScript</code>, <code>HTML5</code>, <code>CSS3</code>, <code>SQL</code> </td> </tr> <tr> <td><strong>🧠 AI & Machine Learning</strong></td> <td> <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" /><br/> <code>PyTorch</code>, <code>TensorFlow</code>, <code>Keras</code>, <code>Transformers (HuggingFace)</code><br/> <code>OpenCV</code>, <code>Dlib</code>, <code>Pandas</code>, <code>NumPy</code>, <code>CNNs</code> </td> </tr> <tr> <td><strong>🌐 Web Development</strong></td> <td> <img src="https://skillicons.dev/icons?i=django,flask,html,css,js" /><br/> <code>Django</code>, <code>Flask</code>, <code>RESTful APIs</code>, <code>PyInstaller</code>, <code>Electron</code> </td> </tr> <tr> <td><strong>🗄️ Databases</strong></td> <td> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb" /><br/> <code>MySQL</code>, <code>MSSQL</code>, <code>PostgreSQL</code>, <code>MongoDB</code> </td> </tr> <tr> <td><strong>☁️ Cloud & DevOps</strong></td> <td> <img src="https://skillicons.dev/icons?i=aws,docker,git,github,linux" /><br/> <strong>AWS:</strong> <code>Amplify</code>, <code>EC2</code>, <code>RDS</code>, <code>S3</code>, <code>Route 53</code><br/> <code>Elastic Beanstalk</code>, <code>ECR</code>, <code>App Runner</code><br/> <strong>DevOps:</strong> <code>Docker</code>, <code>Git</code>, <code>GitHub</code>, <code>Linux</code> </td> </tr> <tr> <td><strong>🔐 Cybersecurity</strong></td> <td> <img src="https://img.shields.io/badge/CyberSec-Ethical%20Hacking%20%7C%20SQL%20Injection%20%7C%20SRX-blueviolet?style=flat-square&logo=hackclub&logoColor=white"/><br/> <code>Ethical Hacking</code>, <code>Attack Vectors</code>, <code>SQL Injection</code>, <code>Juniper SRX Config</code> </td> </tr> <tr> <td><strong>🧪 Tools & Platforms</strong></td> <td> <img src="https://skillicons.dev/icons?i=spark,vscode,linux" /><br/> <code>Apache Spark</code>, <code>VS Code</code>, <code>MS Office</code>, <code>Linux</code> </td> </tr> </table>
+
 ---
 
 ## 🎓 Education
@@ -134,5 +122,5 @@ If you like my work and want to support future projects:
 ---
 
 
-<p align="center"><i>Auto-generated on June 17, 2025 06:09 UTC</i></p>
+<p align="center"><i>Auto-generated on June 17, 2025 06:11 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
