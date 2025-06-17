@@ -90,8 +90,24 @@ If my projects help or inspire you, consider fueling future open-source with a c
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/rajeshkumarjogi?label=Followers&style=for-the-badge&logo=github&color=0e75b6" />
-  <img src="https://img.shields.io/github/stars/rajeshkumarjogi?label=Stars&style=for-the-badge&logo=github&color=c0a60f" />
-  <img src="https://img.shields.io/github/last-commit/rajeshkumarjogi/rudhira?label=Last%20Commit%20on%20Rudhira&style=for-the-badge&logo=github&color=green" />
+  <img src="https://img.shields.io/github/stars/rajeshkumarjogi?label=Stars&style=for-the-badge&logo=github&color=ffd700" />
+  <img src="https://img.shields.io/github/last-commit/rajeshkumarjogi/rudhira?label=Last%20Commit%20on%20Rudhira&style=for-the-badge&logo=git&color=brightgreen" />
+</p>
+
+---
+
+### ⚡ Contribution Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=rajeshkumarjogi&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
+</p>
+
+---
+
+### 💻 Most Used Languages
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajeshkumarjogi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=Course_work,Signature" />
 </p>
 
 
