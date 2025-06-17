@@ -87,10 +87,19 @@ If my projects help or inspire you, consider fueling future open-source with a c
 ---
 
 ## 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rajeshkumarjogi&show_icons=true&theme=radical&hide=contribs,prs"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajeshkumarjogi&layout=compact&theme=radical"/>
+  <img src="https://github-readme-stats-git-master-jogirajesh.vercel.app/api?username=rajeshkumarjogi&show_icons=true&theme=tokyonight&hide=contribs"/>
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rajeshkumarjogi&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats-git-master-jogirajesh.vercel.app/api/top-langs/?username=rajeshkumarjogi&layout=compact&theme=tokyonight" />
+</p>
+
 
 ---
 
