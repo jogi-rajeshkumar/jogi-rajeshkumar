@@ -120,6 +120,19 @@ _ThoughtGreen | Jan 2023 – Apr 2023_
 
 ---
 
+## ☕ Sponsor Me
+
+If you like my work and want to support future projects:
+
+<p align="center">
+  <a href="https://buymeacoffee.com/rajeshkumaw" target="_blank">
+    <img src="https://img.shields.io/badge/Buy&nbsp;Me&nbsp;a&nbsp;Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Sponsor on BuyMeACoffee" />
+  </a>
+</p>
+
+---
+
+
 <p align="center"><i>Auto-generated on {datetime.utcnow().strftime('%B %d, %Y %H:%M UTC')}</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
 """
