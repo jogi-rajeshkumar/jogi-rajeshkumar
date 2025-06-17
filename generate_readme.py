@@ -28,12 +28,16 @@ I'm currently pursuing an MSc in Artificial Intelligence at the University of Ea
 
 ---
 
-## 🛠️ Technical Toolbox
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,sql,docker,aws,mysql,mongodb,postgresql,linux,git,flask,django,tensorflow,pytorch,keras,vscode" />
-</p>
-
+🧠 AI & Machine Learning
+<p align="center"> <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,keras" /> </p>
+🌐 Web & App Development
+<p align="center"> <img src="https://skillicons.dev/icons?i=js,html,css,flask,django" /> </p>
+🗃️ Databases & Querying
+<p align="center"> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,sql" /> </p>
+☁️ Cloud & DevOps
+<p align="center"> <img src="https://skillicons.dev/icons?i=aws,docker,linux,git" /> </p>
+🧰 Tools & Editors
+<p align="center"> <img src="https://skillicons.dev/icons?i=vscode" /> </p>
 ---
 
 ## 🎓 Education

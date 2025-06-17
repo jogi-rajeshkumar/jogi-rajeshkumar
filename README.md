@@ -24,12 +24,16 @@ I'm currently pursuing an MSc in Artificial Intelligence at the University of Ea
 
 ---
 
-## 🛠️ Technical Toolbox
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,sql,docker,aws,mysql,mongodb,postgresql,linux,git,flask,django,tensorflow,pytorch,keras,vscode" />
-</p>
-
+🧠 AI & Machine Learning
+<p align="center"> <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,keras" /> </p>
+🌐 Web & App Development
+<p align="center"> <img src="https://skillicons.dev/icons?i=js,html,css,flask,django" /> </p>
+🗃️ Databases & Querying
+<p align="center"> <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,sql" /> </p>
+☁️ Cloud & DevOps
+<p align="center"> <img src="https://skillicons.dev/icons?i=aws,docker,linux,git" /> </p>
+🧰 Tools & Editors
+<p align="center"> <img src="https://skillicons.dev/icons?i=vscode" /> </p>
 ---
 
 ## 🎓 Education
@@ -125,5 +129,5 @@ If you like my work and want to support future projects:
 ---
 
 
-<p align="center"><i>Auto-generated on June 17, 2025 05:56 UTC</i></p>
+<p align="center"><i>Auto-generated on June 17, 2025 06:07 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
