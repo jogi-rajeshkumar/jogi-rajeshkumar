@@ -110,8 +110,6 @@ If my projects help or inspire you, consider fueling future open-source with a c
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajeshkumarjogi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=Course_work,Signature" />
 </p>
 
-
-
 ---
 
 ## 📫 Let’s Connect

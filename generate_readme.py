@@ -1,6 +1,6 @@
 from datetime import datetime
 
-readme_filename = "/mnt/data/README_rajeshkumarjogi_final.md"
+readme_filename = "README.md"
 
 readme_content = f"""<h1 align="center">Hey there 👋 I'm Rajesh Kumar Jogi</h1>
 
