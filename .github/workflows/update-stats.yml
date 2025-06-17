@@ -1,0 +1,28 @@
+name: 🌀 Update GitHub Profile Stats
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # every day at 6 AM UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 🤖 Configure Git
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+
+      - name: 📦 Commit & Push (only if changed)
+        run: |
+          git add .
+          git commit -m "♻️ Auto-update README with latest stats" || echo "No changes to commit"
+          git push
