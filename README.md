@@ -97,21 +97,9 @@ _ThoughtGreen | Jan 2023 – Apr 2023_
 
 ---
 
-# ## 📊 GitHub Insights
 
-# <p align="center">
-#   <img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight" />
-# </p>
 
-# <p align="center">
-#   <img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&bg_color=0d1117&color=8df1e7&line=00e0ff&point=00ffdd&area=true&hide_border=true" />
-# </p>
-
-# <p align="center">
-#   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true" />
-# </p>
-
-<!-- GitHub Stats --> <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&count_private=true&theme=tokyonight&border_radius=15&include_all_commits=true" width="48%" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=jogi-rajeshkumar&theme=tokyonight&border_radius=15&date_format=M%20j%5B%2C%20Y%5D" width="48%"/> </p> <!-- Contribution Activity Graph --> <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&bg_color=0d1117&color=66d9ef&line=8be9fd&point=f1fa8c&area=true&hide_border=true&radius=15" /> </p> <!-- Top Languages + Wakatime --> <p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=donut&theme=tokyonight&hide_border=true&border_radius=15" width="45%"/> <img src="https://github-readme-stats.vercel.app/api/wakatime?username=jogi_rajeshkumar&theme=tokyonight&layout=compact&hide_border=true&border_radius=15" width="45%" /> </p> <!-- GitHub Trophy Cabinet --> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&margin-w=15&column=6" /> </p>
+<!-- 📊 GitHub Stats --> <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&count_private=true&theme=tokyonight&border_radius=15&include_all_commits=true" width="48%" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=jogi-rajeshkumar&theme=tokyonight&border_radius=15&date_format=M%20j%5B%2C%20Y%5D" width="48%"/> </p> <!-- Contribution Activity Graph --> <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&bg_color=0d1117&color=66d9ef&line=8be9fd&point=f1fa8c&area=true&hide_border=true&radius=15" /> </p> <!-- Top Languages + Wakatime --> <p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=donut&theme=tokyonight&hide_border=true&border_radius=15" width="45%"/> <img src="https://github-readme-stats.vercel.app/api/wakatime?username=jogi_rajeshkumar&theme=tokyonight&layout=compact&hide_border=true&border_radius=15" width="45%" /> </p> <!-- GitHub Trophy Cabinet --> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&margin-w=15&column=6" /> </p>
 ---
 
 ## ☕ Sponsor Me
@@ -123,5 +111,5 @@ If you like my work and want to support future projects:
 ---
 
 
-<p align="center"><i>Auto-generated on June 17, 2025 06:13 UTC</i></p>
+<p align="center"><i>Auto-generated on June 17, 2025 06:14 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
