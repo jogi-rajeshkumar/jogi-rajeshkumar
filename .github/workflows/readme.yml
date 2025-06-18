@@ -31,4 +31,5 @@ jobs:
           git config user.email "action@github.com"
           git add README.md
           git commit -m "📝 Auto-update README from script" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
