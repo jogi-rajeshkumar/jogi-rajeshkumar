@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Rajesh Kumar Jogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --transition: all 0.4s ease;
+      --main-glow: 0 0 20px rgba(13, 110, 253, 0.3);
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    .main-header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-bar img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .main-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      transition: var(--transition);
+    }
+    .main-nav a:hover {
+      background-color: #21262d;
+      color: #0dcaf0;
+    }
+    @media (max-width: 768px) {
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0d1117;
+        padding: 12px;
+        border-top: 1px solid #30363d;
+        align-items: flex-end;
+      }
+      .main-nav.show {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .education-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .edu-card {
+      background: #161b22;
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      box-shadow: var(--main-glow);
+      transition: var(--transition);
+    }
+    .edu-card:hover {
+      transform: translateY(-4px);
+    }
+    .edu-card h2 {
+      color: #58a6ff;
+    }
+    .edu-card h3 {
+      display: flex;
+      justify-content: space-between;
+      color: #c9d1d9;
+      font-weight: normal;
+    }
+    .edu-card p {
+      margin-top: 8px;
+      color: #b1bac4;
+    }
+    .main-footer {
+      background: #0d1117;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #30363d;
+      color: #c9d1d9;
+    }
+    .social-icons {
+      margin-bottom: 16px;
+    }
+    .social-icons a {
+      color: #c9d1d9;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.main-nav').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-bar">
+      <a href="index.html"><img src="images/logo.png" alt="Rajesh Logo"></a>
+      <div>
+        <h1>Rajesh Kumar Jogi</h1>
+        <p>AI Engineer | Software Developer | Cloud Enthusiast</p>
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="workexp.html">Work Experience</a>
+      <a href="certificates_Achivements.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1 style="text-align: center; margin-top: 40px; color: #58a6ff;">Education</h1>
+  <div class="education-section">
+    <div class="edu-card">
+      <h2>MSc Artificial Intelligence (with Industrial Placement)</h2>
+      <h3>University of East London <span>2024–2026</span></h3>
+      <p>Modules: Intelligent Systems, Big Data Analytics, Artificial Intelligence, Machine Learning on Big Data.</p>
+      <p><strong>Dissertation:</strong> Federated Learning on Edge IoT Robots for Privacy-Preserving Vision AI — focused on deploying privacy-aware learning at the edge in sensitive sectors like healthcare.</p>
+    </div>
+
+    <div class="edu-card">
+      <h2>B.Tech in Computer Science and Engineering</h2>
+      <h3>Koneru Lakshmaiah Education Foundation <span>2016–2020</span></h3>
+      <p><strong>GPA:</strong> 7.13/10</p>
+      <p><strong>Project:</strong> Real-time ML-based Safety System — integrating cloud and sensor data for intelligent alerts in critical scenarios.</p>
+      <p>Built solid foundations in software engineering, databases, networks, and project-based learning.</p>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+      <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Rajesh Kumar Jogi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

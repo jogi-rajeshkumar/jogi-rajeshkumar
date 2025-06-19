@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates & Achievements - Rajesh Kumar Jogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --transition: all 0.4s ease;
+      --main-glow: 0 0 20px rgba(13, 110, 253, 0.3);
+      --primary: #0d6efd;
+      --secondary: #6610f2;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    .main-header {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-bar img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .main-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      transition: var(--transition);
+    }
+    .main-nav a:hover {
+      background-color: #21262d;
+      color: #0dcaf0;
+    }
+    @media (max-width: 768px) {
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0d1117;
+        padding: 12px;
+        border-top: 1px solid #30363d;
+        align-items: flex-end;
+      }
+      .main-nav.show {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #58a6ff;
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .cert-img-wrapper {
+      position: relative;
+      background: #161b22;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--main-glow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cert-img-wrapper:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(13, 202, 240, 0.3);
+    }
+    .cert-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .view-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.6);
+      padding: 8px;
+      border-radius: 50%;
+      color: #fff;
+      transition: var(--transition);
+    }
+    .view-btn:hover {
+      background: #0dcaf0;
+      transform: scale(1.1);
+    }
+    .cert-footer {
+      text-align: center;
+      padding: 12px;
+      background: #21262d;
+      color: #c9d1d9;
+      font-weight: bold;
+    }
+    .main-footer {
+      background: #0d1117;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #30363d;
+      color: #c9d1d9;
+    }
+    .social-icons {
+      margin-bottom: 16px;
+    }
+    .social-icons a {
+      color: #c9d1d9;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.main-nav').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-bar">
+      <a href="index.html"><img src="images/logo.png" alt="Rajesh Logo"></a>
+      <div>
+        <h1>Rajesh Kumar Jogi</h1>
+        <p>AI Engineer | Software Developer | Cloud Enthusiast</p>
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="workexp.html">Work Experience</a>
+      <a href="certificates_Achivements.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+
+
+
+  <h1 style="text-align: center; margin-top: 40px; color: #58a6ff;">Certificates & Achievements</h1>
+
+  <div class="certificates-grid">
+    <!-- Certificate Blocks -->
+    <div class="cert-img-wrapper">
+      <a href="images/Android Bug Bounty.png" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Android Bug Bounty.png" alt="Android Bug Bounty">
+      <div class="cert-footer">Android Bug Bounty</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Artificial Intelligence and Business Strategy Case Studies.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Artificial Intelligence and Business Strategy Case Studies.jpg" alt="AI Business Strategy">
+      <div class="cert-footer">AI Business Strategy</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/CertificateOfCompletion_Artificial Intelligence and Business Strategy Case Studies.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/CertificateOfCompletion_Artificial Intelligence and Business Strategy Case Studies.jpg" alt="AI Strategy Completion">
+      <div class="cert-footer">AI Strategy Completion</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn_page-0001.jpg" alt="Generative AI">
+      <div class="cert-footer">Generative AI by Microsoft</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/CertificateOfCompletion_Docker Foundations Professional Certificate_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/CertificateOfCompletion_Docker Foundations Professional Certificate_page-0001.jpg" alt="Docker Certificate">
+      <div class="cert-footer">Docker Foundations</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Juniper SRX Router.png" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Juniper SRX Router.png" alt="Juniper SRX">
+      <div class="cert-footer">Juniper SRX Router</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Machine Learning Algorithms_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Machine Learning Algorithms_page-0001.jpg" alt="ML Algorithms">
+      <div class="cert-footer">Machine Learning Algorithms</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Networking_Fundaamentals-1.png" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Networking_Fundaamentals-1.png" alt="Networking Fundamentals">
+      <div class="cert-footer">Networking Fundamentals</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Neural_Networks_in_R_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Neural_Networks_in_R_page-0001.jpg" alt="Neural Networks in R">
+      <div class="cert-footer">Neural Networks in R</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Programming Basics_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Programming Basics_page-0001.jpg" alt="Programming Basics">
+      <div class="cert-footer">Programming Basics</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Raspberry Pi Based Smart Emergency Alert System.png" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Raspberry Pi Based Smart Emergency Alert System.png" alt="Smart Emergency Alert">
+      <div class="cert-footer">Raspberry Pi Emergency Alert</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/SQL Injection Attacks.png" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/SQL Injection Attacks.png" alt="SQL Injection">
+      <div class="cert-footer">SQL Injection Attacks</div>
+    </div>
+
+    <div class="cert-img-wrapper">
+      <a href="images/Types of CyberSecurity_page-0001.jpg" target="_blank" class="view-btn"><i class="fas fa-search-plus"></i></a>
+      <img class="cert-img" src="images/Types of CyberSecurity_page-0001.jpg" alt="Cyber Security Types">
+      <div class="cert-footer">Types of Cyber Security</div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="main-footer">
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+      <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Rajesh Kumar Jogi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

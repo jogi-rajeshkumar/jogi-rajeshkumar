@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Rajesh Kumar Jogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --secondary: #6610f2;
+      --accent: #0dcaf0;
+      --background: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --transition: all 0.3s ease;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+    .main-header {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-bar img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .main-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      transition: var(--transition);
+    }
+    .main-nav a:hover {
+      background-color: #21262d;
+      color: var(--accent);
+    }
+    @media (max-width: 768px) {
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--background);
+        padding: 12px;
+        border-top: 1px solid var(--border);
+        align-items: flex-end;
+      }
+      .main-nav.show {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.main-nav').classList.toggle('show');
+    }
+  </script>
+
+<!-- Load EmailJS v4 UMD (non-module) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    emailjs.init('wdT5rZlLAW5LIq9d6'); // Your Public Key
+
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_yb0ay1i', 'template_dt4ztcu', form)
+          .then(() => {
+            alert('✅ Message sent successfully!');
+            form.reset();
+          })
+          .catch((error) => {
+            console.error('❌ Failed to send message:', error);
+            alert('❌ Failed to send message. Please try again.');
+          });
+      });
+    } else {
+      console.error('Form element not found.');
+    }
+  });
+</script>
+
+
+
+
+
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-bar">
+      <a href="index.html"><img src="images/logo.png" alt="Rajesh Logo"></a>
+      <div>
+        <h1>Rajesh Kumar Jogi</h1>
+        <!-- <p>Computer Vision Software Engineer</p> -->
+        <p>AI Engineer | Software Developer | Cloud Enthusiast</p>
+
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="workexp.html">Work Experience</a>
+      <a href="certificates_Achivements.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  
+  
+
+  <div class="contact-container">
+    
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong> <a href="mailto:rajeshkumarjogi.2098@gmail.com">rajeshkumarjogi.2098@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+447916601225">+44 7916 601 225</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/447916601225" target="_blank">Chat on WhatsApp</a></p>
+      <p><strong>Location:</strong> London, United Kingdom</p>
+      <div class="social-icons">
+        <!-- <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rajesh-kumar-jogi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/jogirajeshkumar" target="_blank" title="X"><i class="fab fa-x"></i></a>
+        <a href="https://instagram.com/_rajesh_kumar__._" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/rk.2098/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:rajeshkumarjogi.2098@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/447916601225" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a> -->
+      <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+      <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+<div class="contact-form">
+<form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="text" name="subject" placeholder="Subject (Optional)" />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+</div>
+
+
+  </div>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer class="main-footer">
+    <!-- <div class="social-icons">
+      <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+      <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div> -->
+    <p>&copy; 2025 Rajesh Kumar Jogi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

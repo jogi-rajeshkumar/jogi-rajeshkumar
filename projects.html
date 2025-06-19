@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Rajesh Kumar Jogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    .main-header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-bar img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .main-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+    .main-nav a:hover {
+      background-color: #21262d;
+      color: #0dcaf0;
+    }
+    @media (max-width: 768px) {
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0d1117;
+        padding: 12px;
+        border-top: 1px solid #30363d;
+        align-items: flex-end;
+      }
+      .main-nav.show {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #58a6ff;
+      font-size: 2.5rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-card {
+      background: linear-gradient(135deg, #1c1f26, #1f2937);
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 0 18px rgba(13, 110, 253, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 28px rgba(0, 225, 255, 0.3);
+    }
+    .project-card h2 {
+      color: #0dcaf0;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+    .project-card p {
+      font-size: 1rem;
+      color: #c9d1d9;
+      flex-grow: 1;
+    }
+    .project-card a {
+      margin-top: 16px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .project-card a:hover {
+      background: #0dcaf0;
+      color: #000;
+    }
+    .main-footer {
+      background: #0d1117;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #30363d;
+      color: #c9d1d9;
+    }
+    .social-icons a {
+      color: #c9d1d9;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.main-nav').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-bar">
+      <a href="index.html"><img src="images/logo.png" alt="Rajesh Logo"></a>
+      <div>
+        <h1>Rajesh Kumar Jogi</h1>
+        <p>AI Engineer | Software Developer | Cloud Enthusiast</p>
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="workexp.html">Work Experience</a>
+      <a href="certificates_Achivements.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1>My Projects</h1>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h2>Stock Market Portfolio Optimization</h2>
+      <p>Optimize stock portfolios using Python, real-time Indian stock data, and Modern Portfolio Theory with Sharpe ratio evaluations.</p>
+      <a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h2>Federated Learning on Edge IoT Robots</h2>
+      <p>Privacy-preserving AI for visual recognition in hospitals using federated CNNs and MobileNet across edge devices.</p>
+      <a href="https://github.com/rajesh-kumar-jogi/federated-iot-ai" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h2>Jarvis – AI Virtual Assistant in Python</h2>
+      <p>Jarvis, a Python-based AI voice assistant developed as a final year project. This assistant performs a variety of intelligent tasks triggered by your voice commands, including speaking responses, opening applications, fetching weather updates, generating passwords, and even interacting with WhatsApp.</p>
+      <a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h2>Cloud Movie Streaming Platform</h2>
+      <p>Designed on AWS using EC2, S3, and MediaLive for high-availability, scalable on-demand video services.</p>
+      <a href="https://github.com/rajesh-kumar-jogi/cloud-movie-streaming" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h2>Network Intrusion Detection with PySpark</h2>
+      <p>Utilized the CIC-IDS-2017 dataset and Spark MLlib to detect anomalies using Random Forest and KMeans models.</p>
+      <a href="https://github.com/rajesh-kumar-jogi/network-intrusion-detection" target="_blank">View Project</a>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+      <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Rajesh Kumar Jogi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

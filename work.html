@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Experience - Rajesh Kumar Jogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0d1117, #161b22);
+      color: #d1d5da;
+    }
+
+    /* Header */
+    .main-header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-bar img {
+      height: 60px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-bar img:hover {
+      transform: scale(1.1);
+    }
+
+    .logo-bar h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    .logo-bar p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #e0e0e0;
+    }
+
+    .main-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .main-nav a:hover {
+      background-color: #21262d;
+      color: #0dcaf0;
+      box-shadow: 0 0 10px #0dcaf0;
+    }
+
+    /* Work Section */
+    .work-container {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 40px;
+    }
+
+    .experience-block {
+      background: linear-gradient(145deg, #0d1117, #1a1f27);
+      border-left: 5px solid #0dcaf0;
+      padding: 28px;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 18px rgba(13, 202, 240, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .experience-block:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(13, 110, 253, 0.25);
+    }
+
+    .badge {
+      background: radial-gradient(circle, #0dcaf0, #6610f2);
+      padding: 4px 12px;
+      color: white;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .header-flex img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: contain;
+      border: 2px solid #30363d;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #0dcaf0;
+    }
+
+    .company-name {
+      font-size: 0.95rem;
+      color: #8b949e;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      background: #0d1117;
+      border-left: 3px solid #0dcaf0;
+      padding: 12px;
+      margin-top: 14px;
+      border-radius: 8px;
+      font-size: 0.94rem;
+      box-shadow: inset 0 0 4px rgba(88, 166, 255, 0.1);
+    }
+
+    .stack {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack span {
+      background: rgba(13, 202, 240, 0.1);
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      border-radius: 16px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .stack span:hover {
+      background: #0d6efd;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .main-footer {
+      background: rgba(13, 17, 23, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 50px 25px 30px;
+      text-align: center;
+      border-top: 1px solid #30363d;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+      color: #58a6ff;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      width: 42px;
+      height: 42px;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c9d1d9;
+      background: #161b22;
+      border: 1px solid #30363d;
+      transition: all 0.4s ease;
+    }
+
+    .social-icons a:hover {
+      background: #0d6efd;
+      color: white;
+      transform: scale(1.2);
+      box-shadow: 0 0 12px rgba(88, 166, 255, 0.5);
+    }
+
+    .main-footer p {
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+  </style>
+  
+</head>
+<body>
+    <header class="main-header">
+    <div class="logo-bar">
+      <img src="images/logo.png" alt="Rajesh Logo" />
+      <div>
+        <h1>Rajesh Kumar Jogi</h1>
+        <p>AI Engineer | Software Developer | Cloud Enthusiast</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="Work.html">Work Experience</a>
+      <a href="certificates_Achivements.html">Certificates</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a>
+      <!-- <a href="linkedin.html">LinkedIn</a> -->
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="work-container">
+    <h1>Professional Experience</h1>
+
+    <div class="experience-block">
+      <div class="badge">Dec 2023 – Aug 2024 · 9 months</div>
+      <div class="header-flex">
+        <img src="images/booleanbrain.png" alt="Boolean Brain" />
+        <div>
+          <div class="job-title">Computer Vision Software Engineer (Team Lead)</div>
+          <div class="company-name">Boolean Brain Technologies · Hyderabad, India</div>
+        </div>
+      </div>
+      <div class="description">
+        Led AI initiatives and backend systems, managed architecture and integration across platforms. Built Python tools, collaborated with cross-functional teams, and contributed to LLM-based solution pipelines.
+      </div>
+      <div class="highlight">🏆 Key Highlight: Reduced model deployment time by 40% through reusable backend modules.</div>
+      <div class="stack">
+        <span>Python</span><span>TensorFlow</span><span>Generative AI</span><span>Docker</span><span>LLM</span><span>AWS</span>
+      </div>
+    </div>
+
+    <div class="experience-block">
+      <div class="badge">May 2023 – Nov 2023 · 7 months</div>
+      <div class="header-flex">
+        <img src="images/timingtech.png" alt="Timing Technologies" />
+        <div>
+          <div class="job-title">Computer Vision Software Engineer (AI)</div>
+          <div class="company-name">Timing Technologies India Pvt Ltd · Hyderabad, India</div>
+        </div>
+      </div>
+      <div class="description">
+        Built real-time facial recognition and enhanced image classification models. Delivered high-accuracy object detection for sports analytics and developed user-friendly Django interfaces.
+      </div>
+      <div class="highlight">🚀 Deployed: Real-time face recognition for event check-ins with &lt;0.5s latency.</div>
+      <div class="stack">
+        <span>Django</span><span>Python</span><span>HTML</span><span>MongoDB</span><span>Keras</span><span>Electron</span>
+      </div>
+    </div>
+
+    <div class="experience-block">
+      <div class="badge">Jan 2023 – May 2023 · 5 months</div>
+      <div class="header-flex">
+        <img src="images/thoughtgreen.png" alt="ThoughtGreen" />
+        <div>
+          <div class="job-title">Software Engineer Intern (AI)</div>
+          <div class="company-name">ThoughtGreen Technologies Pvt Ltd · Hyderabad, India</div>
+        </div>
+      </div>
+      <div class="description">
+        Hands-on experience with CNNs, image detection, and full-stack ML integration using Django and PyTorch.
+      </div>
+      <div class="highlight">💡 Contributed: ML-powered dashboard tools integrated via RESTful APIs.</div>
+      <div class="stack">
+        <span>TensorFlow</span><span>PyTorch</span><span>Django</span><span>MongoDB</span><span>pandas</span><span>SQL</span>
+      </div>
+    </div>
+
+    <div class="experience-block">
+      <div class="badge">Jan 2021 – Dec 2022 · 2 years</div>
+      <div class="header-flex">
+        <img src="images/freelancer.png" alt="Freelancer" />
+        <div>
+          <div class="job-title">Freelance Developer</div>
+          <div class="company-name">Self-employed · Remote</div>
+        </div>
+      </div>
+      <div class="description">
+        Built and delivered AI-driven software including fraud detection, real-time face attendance, and restaurant/ATM systems.
+      </div>
+      <div class="highlight">🔧 Delivered: 6+ complete systems from design to deployment for local clients.</div>
+      <div class="stack">
+        <span>AI</span><span>Flask</span><span>Docker</span><span>NLTK</span><span>RDS</span><span>AWS</span><span>EC2</span><span>SQL</span>
+      </div>
+    </div>
+
+  </div>
+  <footer class="main-footer">
+  <div class="footer-grid">
+
+    <!-- Contact Info -->
+    <!-- <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:rajeshkumarjogi.2098@gmail.com">rajeshkumarjogi.2098@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447916601225">+44 7916 601 225</a></p>
+      <p>Location: London, United Kingdom</p>
+    </div> -->
+
+    <!-- Quick Links -->
+    <!-- <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div> -->
+
+    <!-- Social Media -->
+    <div class="footer-column">
+      <h3>Connect</h3>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rajesh-kumar-jogi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/447916601225" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://x.com/jogirajeshkumar" target="_blank"><i class="fab fa-x"></i></a>
+        <a href="https://www.instagram.com/_rajesh_kumar__._/#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/rk.2098/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://youtube.com/@rajeshkumarjogi2098?si=6UxZjTuswn85-OMK" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <p>&copy; 2025 Rajesh Kumar Jogi. All rights reserved.</p>
+</footer>
+</body>
+</html>
