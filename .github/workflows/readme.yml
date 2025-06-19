@@ -5,31 +5,50 @@ on:
     - cron: "0 6 * * *"  # Runs every day at 6 AM UTC
   workflow_dispatch:      # Allows manual trigger
 
-# ✅ Important: Give write access to contents so push works
+# 👇 Prevent multiple runs from conflicting
+concurrency:
+  group: readme-auto-update
+  cancel-in-progress: true
+
 permissions:
-  contents: write
+  contents: write  # Required to push to repo
 
 jobs:
   build-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: 📥 Checkout Repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Ensure full history for safe pull/rebase
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Run README Generator Script
+      - name: ⚙️ Run README Generator Script
         run: python generate_readme.py
 
-      - name: Commit Changes
+      - name: 🔐 Git Config
         run: |
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: 📤 Commit & Push README.md
+        run: |
+          # Safely update from latest origin
+          git pull --rebase --autostash origin main
+
+          # Check if README.md was changed
+          if git diff --quiet README.md; then
+            echo "✅ No changes to README.md – nothing to commit."
+            exit 0
+          fi
+
           git add README.md
-          git commit -m "📝 Auto-update README from script" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push
+          git commit -m "📝 Auto-update README from script"
+
+          # Push with protection – only force if safe
+          git push --force-with-lease origin HEAD:main
