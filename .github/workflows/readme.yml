@@ -2,53 +2,52 @@ name: 🔄 Auto-Generate README
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Runs every day at 6 AM UTC
-  workflow_dispatch:      # Allows manual trigger
-
-# 👇 Prevent multiple runs from conflicting
-concurrency:
-  group: readme-auto-update
-  cancel-in-progress: true
+    - cron: "0 6 * * *"  # Every day at 6 AM UTC
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Required to push to repo
+  contents: write
+
+concurrency:
+  group: readme-update
+  cancel-in-progress: true
 
 jobs:
   build-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout Repo
+      - name: 📥 Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Ensure full history for safe pull/rebase
+          fetch-depth: 0  # Needed for rebase
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: ⚙️ Run README Generator Script
+      - name: ⚙️ Run README generator
         run: python generate_readme.py
 
-      - name: 🔐 Git Config
+      - name: 🔧 Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: 📤 Commit & Push README.md
+      - name: 🧠 Pull latest and check changes
         run: |
-          # Safely update from latest origin
-          git pull --rebase --autostash origin main
+          # Always pull latest to avoid rejected push
+          git pull --rebase origin main || exit 1
 
-          # Check if README.md was changed
+          # Only commit if README.md has changed
           if git diff --quiet README.md; then
-            echo "✅ No changes to README.md – nothing to commit."
+            echo "✅ No changes in README.md – skipping commit."
             exit 0
           fi
 
           git add README.md
           git commit -m "📝 Auto-update README from script"
 
-          # Push with protection – only force if safe
-          git push --force-with-lease origin HEAD:main
+      - name: 🚀 Push updated README safely
+        run: git push --force-with-lease origin HEAD:main
