@@ -1,53 +1,73 @@
-name: 🔄 Auto-Generate README
+# .github/workflows/generate-readme.yml
+name: 🔄 Auto-Generate README (retry-safe)
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Every day at 6 AM UTC
-  workflow_dispatch:
+    - cron: "0 6 * * *"     # every day @ 06:00 UTC
+  workflow_dispatch:        # manual trigger
 
 permissions:
-  contents: write
+  contents: write           # required for pushing
 
+# 💡 one run at a time – any overlap is queued, not cancelled
 concurrency:
-  group: readme-update
-  cancel-in-progress: true
+  group: readme-auto-update
+  cancel-in-progress: false
 
 jobs:
   build-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout code
+      - name: 📥 Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Needed for rebase
+          fetch-depth: 0            # full history needed for rebasing
 
-      - name: 🐍 Setup Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: ⚙️ Run README generator
+      - name: ⚙️ Generate README
         run: python generate_readme.py
 
       - name: 🔧 Configure Git
         run: |
-          git config --global user.name "github-actions[bot]"
+          git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: 🧠 Pull latest and check changes
+      # ----------------------------------------------------------
+      # ⭐ Commit & PUSH with up-to-5 automatic retries
+      # ----------------------------------------------------------
+      - name: 🚀 Commit + safe-push (retries)
+        env:
+          MAX_RETRIES: 5
         run: |
-          # Always pull latest to avoid rejected push
-          git pull --rebase origin main || exit 1
+          set -eo pipefail
 
-          # Only commit if README.md has changed
+          # Commit only if README really changed
           if git diff --quiet README.md; then
-            echo "✅ No changes in README.md – skipping commit."
+            echo "✅ README.md unchanged – nothing to commit."
             exit 0
           fi
 
           git add README.md
           git commit -m "📝 Auto-update README from script"
 
-      - name: 🚀 Push updated README safely
-        run: git push --force-with-lease origin HEAD:main
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "🔄 Push attempt $i / $MAX_RETRIES …"
+
+            # Try a safe push first
+            if git push --force-with-lease origin HEAD:main; then
+              echo "🎉 Push succeeded!"
+              exit 0
+            fi
+
+            echo "⚠️  Push failed – remote changed. Rebasing onto latest main…"
+            # Re-sync with whatever just landed on main, then retry
+            git pull --rebase --autostash origin main
+          done
+
+          echo "❌ Push still failing after $MAX_RETRIES attempts – aborting."
+          exit 1
