@@ -89,8 +89,6 @@ _ThoughtGreen | Jan 2023 – Apr 2023_
 | Career Essentials in Generative AI | Microsoft & LinkedIn | [View](https://www.linkedin.com/learning/certificates/6216f90389821a856caead97b1b009b213c76dd2a11ef8911606b73c7e6cafd4) |
 | Docker Foundations Professional Certificate | Docker, Inc. | [View](https://www.linkedin.com/learning/certificates/27b8cad1c9666bc4e6f993522d62f625eefb64a3c46aede8ed69790b8a3e33b2) |
 | Machine Learning Algorithms | Great Learning | [View](https://www.linkedin.com/in/jogi-rajesh-kumar/details/certifications/1748755830666/single-media-viewer/?type=DOCUMENT&profileId=ACoAAD1jLGsBRKipByaMmE537Z9WLf1YtaZozM0) |
-| HTML for Programmers | LinkedIn | [View](https://www.linkedin.com/learning/certificates/5c5929cb1cdbf8a13d63c4eeebb9bc9ee49eb17dcebe7f03ea93c5ef29cfe32a?u=56744289) |
-| OpenAI API: Vision | LinkedIn | [View](https://www.linkedin.com/learning/certificates/a7afc98347519a94d8f7372ef944461429a43918ed5030148b6b958c27911ac2?u=56744289) |
 | Raspberry Pi Emergency Alert Helmet | EC-Council | [View](https://codered.eccouncil.org/certificate/2004d914-de41-4785-96f4-d7a6fbf0f607?logged=true) |
 | Android Bug Bounty Hunting | EC-Council | [View](https://codered.eccouncil.org/certificate/0aaae403-104f-4888-b2c8-177226b1d8ed?logged=true) |
 | Configure Juniper SRX Router Using J-Web | EC-Council | [View](https://codered.eccouncil.org/certificate/090b45a7-e78d-42b4-a6c4-64634aaea756?logged=true) |
@@ -140,5 +138,5 @@ If you like my work and want to support future projects:
 ---
 
 
-<p align="center"><i>Auto-generated on July 03, 2025 06:39 UTC</i></p>
+<p align="center"><i>Auto-generated on July 04, 2025 06:39 UTC</i></p>
 <p align="center"><i>"Technology, when applied with empathy, has the power to change lives."</i></p>
