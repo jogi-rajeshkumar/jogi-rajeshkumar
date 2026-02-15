@@ -9,18 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body style="opacity: 0;">
-    <nav class="navbar">
-        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
-            RAJESH KUMAR JOGI<span class="logo-dot">.</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="study.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blogs.html">Insights</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        RAJESH KUMAR JOGI<span class="logo-dot">.</span>
+    </a>
+    
+    <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li style="--i:1"><a href="index.html" class="active">Home</a></li>
+        <li style="--i:2"><a href="experience.html">Experience</a></li>
+        <li style="--i:3"><a href="study.html">Education</a></li>
+        <li style="--i:4"><a href="projects.html">Projects</a></li>
+        <li style="--i:5"><a href="blogs.html">Insights</a></li>
+        <li class="mobile-socials">
+            <a href="https://github.com/jogi-rajeshkumar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<div class="menu-overlay" id="menu-overlay"></div>
 
     <main>
         <header class="hero container">
@@ -29,7 +42,7 @@
             <h1 class="reveal-up">Designing <span class="gradient-text">Next-Gen</span> Intelligence.</h1>
             
             <p class="hero-sub reveal-up">
-                MSc AI student  and Team Lead  specialized in Federated Learning , Edge AI , and 25% latency-optimized production models.
+                MSc AI student and Team Lead specialized in Federated Learning, Edge AI, and 25% latency-optimized production models.
             </p>
             
             <div class="hero-btns reveal-up">
@@ -55,9 +68,9 @@
                     <div class="skill-group reveal-up" style="transition-delay: 0.1s;">
                         <span class="group-label">AI & ML</span>
                         <div class="tag-cloud">
-                            <span class="skill-pill">PyTorch </span>
-                            <span class="skill-pill">TensorFlow </span>
-                            <span class="skill-pill">OpenCV </span>
+                            <span class="skill-pill">PyTorch</span>
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">OpenCV</span>
                             <span class="skill-pill">Transformers</span>
                         </div>
                     </div>
@@ -67,7 +80,7 @@
                         <div class="tag-cloud">
                             <span class="skill-pill">Flask</span>
                             <span class="skill-pill">Django</span>
-                            <span class="skill-pill">AWS </span>
+                            <span class="skill-pill">AWS</span>
                             <span class="skill-pill">Docker</span>
                         </div>
                     </div>
@@ -88,19 +101,36 @@
                     <a href="https://github.com/jogi-rajeshkumar" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
-                <p>© 2026 Rajesh Kumar Jogi[cite: 421]. All rights reserved.</p>
+                <p>© 2026 Rajesh Kumar Jogi. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // 1. Page Fade-In
+        // 1. Mobile Menu Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // 2. Page Fade-In
         window.onload = () => {
             document.body.style.transition = "opacity 1.2s ease";
             document.body.style.opacity = 1;
         };
 
-        // 2. Typing Effect for Hero Tag
+        // 3. Typing Effect
         const textElement = document.getElementById('typing-text');
         const finalMessage = "// SYSTEM READY: AI & COMPUTER VISION ENGINEER ";
         let i = 0;
@@ -108,14 +138,13 @@
             if (i < finalMessage.length) {
                 textElement.innerHTML += finalMessage.charAt(i);
                 i++;
-                // Fixed: Added missing closing parenthesis here
                 setTimeout(typeWriter, 50); 
             }
         }
         textElement.innerHTML = "";
         setTimeout(typeWriter, 800);
 
-        // 3. Scroll Reveal Effect
+        // 4. Scroll Reveal Effect
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

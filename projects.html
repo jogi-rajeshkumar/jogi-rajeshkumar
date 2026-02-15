@@ -2,96 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rajesh Kumar Jogi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="opacity: 0;">
     <nav class="navbar">
-        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+        <a href="index.html" class="logo">
             RAJESH KUMAR JOGI<span class="logo-dot">.</span>
         </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="study.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blogs.html">Insights</a></li>
+        
+        <div class="mobile-menu-btn" id="mobile-menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li style="--i:1"><a href="index.html">Home</a></li>
+            <li style="--i:2"><a href="experience.html">Experience</a></li>
+            <li style="--i:3"><a href="study.html">Education</a></li>
+            <li style="--i:4"><a href="projects.html" class="active">Projects</a></li>
+            <li style="--i:5"><a href="blogs.html">Insights</a></li>
+            <li class="mobile-socials">
+                <a href="https://github.com/jogi-rajeshkumar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/jogi-rajesh-kumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </li>
         </ul>
     </nav>
+    <div class="menu-overlay" id="menu-overlay"></div>
 
     <section class="container" style="padding-top: 150px;">
-        <span class="tech-tag">PORTFOLIO_CORE</span>
-        <h2 class="gradient-text" style="font-size: 3rem; margin-bottom: 2rem;">Technical Works</h2>
+        <span class="tech-tag reveal-up">// PORTFOLIO_CORE</span>
+        <h2 class="gradient-text reveal-up" style="font-size: 3rem; margin-bottom: 2rem;">Technical Works</h2>
         
-        <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Artificial Intelligence & Deep Learning</h3>
+        <h3 class="reveal-up" style="margin-bottom: 1.5rem; color: var(--accent);">Artificial Intelligence & Deep Learning</h3>
         <div class="gallery-grid" style="margin-bottom: 4rem;">
-            <a href="https://github.com/jogi-rajeshkumar/eeg-fl-emotion" target="_blank" class="project-card">
-                <span class="tech-tag">PYTORCH / FEDAVG [cite: 124, 287]</span>
+            <a href="https://github.com/jogi-rajeshkumar/eeg-fl-emotion" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTORCH / FEDAVG</span>
                 <h3>eeg-fl-emotion</h3>
-                <p>Privacy-preserving emotion recognition system using EEG signals and Federated Learning across simulated edge devices[cite: 287].</p>
+                <p>Privacy-preserving emotion recognition system using EEG signals and Federated Learning across simulated edge devices.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/FAIR1M-CNN-ObjectRecognition" target="_blank" class="project-card">
-                <span class="tech-tag">KERAS / SATELLITE CNN [cite: 290]</span>
+            <a href="https://github.com/jogi-rajeshkumar/FAIR1M-CNN-ObjectRecognition" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">KERAS / SATELLITE CNN</span>
                 <h3>FAIR1M-CNN-ObjectRecognition</h3>
-                <p>Memory-efficient deep learning pipeline for fine-grained object recognition on satellite datasets using custom data generators[cite: 290].</p>
+                <p>Memory-efficient deep learning pipeline for fine-grained object recognition on satellite datasets using custom data generators.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/AI-AVATAR" target="_blank" class="project-card">
-                <span class="tech-tag">NLP / REAL-TIME AI [cite: 324, 325]</span>
+            <a href="https://github.com/jogi-rajeshkumar/AI-AVATAR" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">NLP / REAL-TIME AI</span>
                 <h3>AI-AVATAR</h3>
-                <p>An emotionally intelligent digital being designed with real-time knowledge capabilities[cite: 324].</p>
+                <p>An emotionally intelligent digital being designed with real-time knowledge capabilities.</p>
             </a>
-             <a href="https://github.com/jogi-rajeshkumar/ml-algorithms-cheatsheet" target="_blank" class="project-card">
-                <span class="tech-tag">ML EDUCATION [cite: 295]</span>
+             <a href="https://github.com/jogi-rajeshkumar/ml-algorithms-cheatsheet" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">ML EDUCATION</span>
                 <h3>ML Algorithms Cheatsheet</h3>
-                <p>A comprehensive technical guide covering formulas, pros/cons, and use cases for popular machine learning algorithms[cite: 295, 296].</p>
+                <p>A comprehensive technical guide covering formulas, use cases, and examples for popular machine learning algorithms.</p>
             </a>
         </div>
 
-        <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Computer Vision & Analytics</h3>
+        <h3 class="reveal-up" style="margin-bottom: 1.5rem; color: var(--accent);">Computer Vision & Analytics</h3>
         <div class="gallery-grid" style="margin-bottom: 4rem;">
-            <a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection" target="_blank" class="project-card">
-                <span class="tech-tag">PYTHON / MEDIAPIPE [cite: 338, 339]</span>
+            <a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTHON / MEDIAPIPE</span>
                 <h3>Hand Detection Volume Control</h3>
-                <p>Real-time computer vision application that leverages hand landmark detection for system volume interaction[cite: 338].</p>
+                <p>Real-time computer vision application that leverages hand landmark detection for system volume interaction.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/facial_detection" target="_blank" class="project-card">
-                <span class="tech-tag">JAVASCRIPT / FACE-API [cite: 333, 335]</span>
+            <a href="https://github.com/jogi-rajeshkumar/facial_detection" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">JAVASCRIPT / FACE-API</span>
                 <h3>facial_detection (Web)</h3>
-                <p>Browser-based face detection implementation using JavaScript for processing uploaded images[cite: 333, 334].</p>
+                <p>Browser-based face detection implementation using JavaScript for processing uploaded images.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/eye_open_close_detect" target="_blank" class="project-card">
-                <span class="tech-tag">OPENCV / DLIB [cite: 31, 382]</span>
+            <a href="https://github.com/jogi-rajeshkumar/eye_open_close_detect" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">OPENCV / DLIB</span>
                 <h3>Eye State Detection</h3>
-                <p>Real-time monitoring system designed to detect eye open/close states using computer vision techniques[cite: 382].</p>
+                <p>Real-time monitoring system designed to detect eye open/close states using computer vision techniques.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/qr_code_detection_reader" target="_blank" class="project-card">
-                <span class="tech-tag">PYTHON / CV [cite: 363]</span>
+            <a href="https://github.com/jogi-rajeshkumar/qr_code_detection_reader" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTHON / CV</span>
                 <h3>QR Detection & Reader</h3>
-                <p>Functional utility for the automated detection and real-time reading of QR codes from visual data[cite: 363].</p>
+                <p>Functional utility for the automated detection and real-time reading of QR codes from visual data.</p>
             </a>
         </div>
 
-        <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Data Engineering & Automation</h3>
+        <h3 class="reveal-up" style="margin-bottom: 1.5rem; color: var(--accent);">Data Engineering & Automation</h3>
         <div class="gallery-grid">
-            <a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization" target="_blank" class="project-card">
-                <span class="tech-tag">PYTHON / PANDAS [cite: 43, 359]</span>
+            <a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTHON / PANDAS</span>
                 <h3>Portfolio Optimization</h3>
-                <p>Financial data analysis tool for stock market portfolio optimization using Python[cite: 359, 360].</p>
+                <p>Financial data analysis tool for stock market portfolio optimization using Python.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/generating-output-from-source-data-dynamically-using-pandas" target="_blank" class="project-card">
-                <span class="tech-tag">PANDAS / AUTOMATION [cite: 215, 218]</span>
+            <a href="https://github.com/jogi-rajeshkumar/generating-output-from-source-data-dynamically-using-pandas" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PANDAS / AUTOMATION</span>
                 <h3>Dynamic Data Generator</h3>
-                <p>Automated pipeline for generating dynamic CSV outputs from complex source directory structures[cite: 215, 216].</p>
+                <p>Automated pipeline for generating dynamic CSV outputs from complex source directory structures.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/Server_Check" target="_blank" class="project-card">
-                <span class="tech-tag">PYTHON / DEVOPS [cite: 378, 381]</span>
+            <a href="https://github.com/jogi-rajeshkumar/Server_Check" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTHON / DEVOPS</span>
                 <h3>Server Check Utility</h3>
-                <p>Automated monitoring script that sends Telegram alerts if a server downtime event is detected[cite: 378, 379].</p>
+                <p>Automated monitoring script that sends Telegram alerts if a server downtime event is detected.</p>
             </a>
-            <a href="https://github.com/jogi-rajeshkumar/ip-location-tracking" target="_blank" class="project-card">
-                <span class="tech-tag">PYTHON / API [cite: 394, 397]</span>
+            <a href="https://github.com/jogi-rajeshkumar/ip-location-tracking" target="_blank" class="project-card reveal-up">
+                <span class="tech-tag">PYTHON / API</span>
                 <h3>IP Geolocation Tracker</h3>
-                <p>Python script utilizing geojs.io APIs to retrieve host machine information and geolocation data[cite: 394, 395].</p>
+                <p>Python script utilizing geojs.io APIs to retrieve host machine information and geolocation data.</p>
             </a>
         </div>
     </section>
@@ -108,12 +123,51 @@
                     <a href="https://github.com/jogi-rajeshkumar" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:rajeshkumarjogi.2098@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
-                <p>© 2026 Rajesh Kumar Jogi[cite: 421]. All rights reserved.</p>
+                <p>© 2026 Rajesh Kumar Jogi. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // 1. Unified Mobile Menu Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+        const overlay = document.getElementById('menu-overlay');
+
+        function toggleMenu() {
+            menuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) toggleMenu();
+            });
+        });
+
+        // 2. Page Fade-In
+        window.onload = () => {
+            document.body.style.transition = "opacity 1.2s ease";
+            document.body.style.opacity = 1;
+        };
+
+        // 3. Scroll Reveal Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-up, .project-card').forEach(el => observer.observe(el));
+        
+        // 4. Interactive Card Glow
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('mousemove', (e) => {
                 const rect = card.getBoundingClientRect();
