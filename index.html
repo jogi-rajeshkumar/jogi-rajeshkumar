@@ -299,18 +299,27 @@ body {
 
 .hero-h1 {
   font-family: var(--ff-head);
-  font-size: clamp(2rem, 6.5vw, 6rem);
-  font-weight: 700; line-height: 1.0;
+  font-size: clamp(2.2rem, 6vw, 5.8rem);
+  font-weight: 700;
+  line-height: 0.95;
   letter-spacing: -0.03em;
   color: var(--text);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   animation: heroIn 1s cubic-bezier(0.22,1,0.36,1) 0.3s both;
 }
 @keyframes heroIn { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+.hero-h1 .h1-line {
+  display: block;
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+}
 .hero-h1 .line-grad {
   background: var(--aurora1);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text; display: block;
+  background-clip: text;
+  display: block;
+  line-height: 1.0;
   background-size: 300% 300%;
   animation: auroraShift 6s ease infinite;
 }
@@ -688,7 +697,7 @@ footer::before { content: ''; display: block; height: 2px; background: var(--aur
     margin-bottom: 0.9rem;
     letter-spacing: 0.08em;
   }
-  .hero-h1 { font-size: clamp(1.9rem, 9vw, 2.8rem); margin-bottom: 0.4rem; }
+  .hero-h1 { font-size: clamp(1.9rem, 9vw, 2.6rem); margin-bottom: 0.3rem; line-height: 0.95; }
   .hero-desc { font-size: 0.8rem; line-height: 1.65; margin-bottom: 1rem; }
   .hero-btns { gap: 0.55rem; margin-bottom: 1.1rem; }
   .btn-aurora, .btn-ghost { font-size: 0.75rem; padding: 0.62rem 1.2rem; }
@@ -843,9 +852,9 @@ footer::before { content: ''; display: block; height: 2px; background: var(--aur
       <div class="col-12 col-lg-7">
         <div class="hero-badge"><span class="blink"></span> Available for Opportunities</div>
         <h1 class="hero-h1">
-          Crafting<br>
-          <span class="line-grad">Intelligent</span><br>
-          Systems
+          <span class="h1-line">Crafting</span>
+          <span class="h1-line line-grad">Intelligent</span>
+          <span class="h1-line">Systems</span>
         </h1>
         <div class="typewriter-wrap"><span id="typewriter"></span></div>
         <p class="hero-desc">MSc AI student at UEL · 3+ years building production CV systems, edge AI pipelines &amp; intelligent agents. Researching Federated Learning for EEG-based emotion recognition.</p>
@@ -1170,7 +1179,7 @@ footer::before { content: ''; display: block; height: 2px; background: var(--aur
           <a href="https://github.com/jogi-rajeshkumar" target="_blank" class="fsoc"><i class="bi bi-github"></i></a>
           <a href="https://linkedin.com/in/jogi-rajesh-kumar" target="_blank" class="fsoc"><i class="bi bi-linkedin"></i></a>
           <a href="https://jogi-rajeshkumar.vercel.app" target="_blank" class="fsoc"><i class="bi bi-globe"></i></a>
-          <a href="mailto:rajeshkumarjogi.2098@gmail.com" class="fsoc"><i class="bi bi-envelope-fill"></i></a>
+          <a href="/cdn-cgi/l/email-protection#f684979c93859e9d839b97849c99919fd8c4c6cfceb6919b979f9ad895999b" class="fsoc"><i class="bi bi-envelope-fill"></i></a>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-3 fcol">
@@ -1187,7 +1196,7 @@ footer::before { content: ''; display: block; height: 2px; background: var(--aur
       <div class="col-12 col-sm-6 col-md-4 fcol">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:rajeshkumarjogi.2098@gmail.com">rajeshkumarjogi.2098@gmail.com</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#0371626966706b68766e6271696c646a2d31333a3b43646e626a6f2d606c6e"><span class="__cf_email__" data-cfemail="2557444f40564d4e504844574f4a424c0b17151c1d654248444c490b464a48">[email&#160;protected]</span></a></li>
           <li><a href="tel:+447554499992">+44 7554 499 992</a></li>
           <li><a href="https://jogi-rajeshkumar.vercel.app" target="_blank">jogi-rajeshkumar.vercel.app</a></li>
           <li><span>London, UK</span></li>
@@ -1201,7 +1210,7 @@ footer::before { content: ''; display: block; height: 2px; background: var(--aur
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 /* ── EMAILJS ── */
 emailjs.init('YOUR_PUBLIC_KEY'); // ← Replace with your EmailJS Public Key
@@ -1581,8 +1590,4 @@ function rLists(){
   bl.innerHTML=blogs.length?blogs.map(b=>`<div class="irow"><div><h4>${b.title}</h4><p>${b.tag} · ${fmtD(b.date)||'No date'}</p></div><div class="d-flex gap-2"><button class="btn-ed" onclick="eB('${b.id}')">Edit</button><button class="btn-dl" onclick="dB('${b.id}')">Del</button></div></div>`).join(''):'<p style="color:var(--text2);font-family:var(--ff-mono);font-size:.72rem;text-align:center;padding:1rem">No posts yet.</p>';
   document.getElementById('e-list').innerHTML=exps.map(e=>`<div class="irow"><div><h4>${e.role}</h4><p>${e.co} · ${e.date}</p></div><div class="d-flex gap-2"><button class="btn-ed" onclick="eE('${e.id}')">Edit</button><button class="btn-dl" onclick="dE('${e.id}')">Del</button></div></div>`).join('');
   document.getElementById('c-list').innerHTML=certs.map(c=>`<div class="irow"><div><h4>${c.icon} ${c.name}</h4><p>${c.issuer} · ${c.cat}</p></div><div class="d-flex gap-2"><button class="btn-ed" onclick="eC('${c.id}')">Edit</button><button class="btn-dl" onclick="dC('${c.id}')">Del</button></div></div>`).join('');
-  document.getElementById('sk-list').innerHTML=skills.map(s=>`<div class="irow"><div><h4>${s.icon} ${s.cat}</h4><p>${s.items.slice(0,5).join(', ')}${s.items.length>5?'...':''}</p></div><div class="d-flex gap-2"><button class="btn-dl" onclick="dSk('${s.id}')">Del</button></div></div>`).join('');
-}
-
-/* ── HELPERS ── */
-const g=id=>docu
+  document.getElementById
