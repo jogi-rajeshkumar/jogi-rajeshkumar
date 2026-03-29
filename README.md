@@ -3,10 +3,11 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rajesh%20Kumar%20Jogi&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Computer%20Vision%20Engineer%20%7C%20AI%20Researcher%20%7C%20MSc%20AI%20Student&descAlignY=55&descSize=18" width="100%"/>
 
 <img src="https://komarev.com/ghpvc/?username=jogi-rajeshkumar&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-[![Portfolio](https://img.shields.io/badge/Portfolio-jogi--rajeshkumar.vercel.app-0891b2?style=for-the-badge&logo=vercel&logoColor=white)](https://jogi-rajeshkumar.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-jogi--rajesh--kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jogi-rajesh-kumar)
-[![Email](https://img.shields.io/badge/Email-rajeshkumarjogi.2098%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajeshkumarjogi.2098@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-jogi--rajeshkumar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jogi-rajeshkumar)
+
+<a href="https://jogi-rajeshkumar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-jogi--rajeshkumar.vercel.app-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://linkedin.com/in/jogi-rajesh-kumar"><img src="https://img.shields.io/badge/LinkedIn-jogi--rajesh--kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:rajeshkumarjogi.2098@gmail.com"><img src="https://img.shields.io/badge/Email-rajeshkumarjogi.2098%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://github.com/jogi-rajeshkumar"><img src="https://img.shields.io/badge/GitHub-jogi--rajeshkumar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 
 </div>
 
@@ -139,10 +140,10 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-0891b2?style=for-the-badge)](https://jogi-rajeshkumar.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/jogi-rajesh-kumar)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/jogi-rajeshkumar)
-[![Email](https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail)](mailto:rajeshkumarjogi.2098@gmail.com)
+<a href="https://jogi-rajeshkumar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit_Now-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://linkedin.com/in/jogi-rajesh-kumar"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/jogi-rajeshkumar"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="mailto:rajeshkumarjogi.2098@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 
 </div>
 
@@ -152,6 +153,6 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **29 March 2026, 05:13 UTC** via GitHub Actions*
+*🔄 README auto-updated on **29 March 2026, 05:16 UTC** via GitHub Actions*
 
 </div>
