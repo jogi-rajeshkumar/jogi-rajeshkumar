@@ -2,7 +2,7 @@ name: 🔄 Auto-Generate README
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Run every day at 6 AM UTC
+    - cron: "0 6 * * *"   # Daily at 6 AM UTC
   workflow_dispatch:
 
 permissions:
@@ -20,14 +20,19 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Required for pulling full history
+          fetch-depth: 0
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: 🧠 Run README Generator
+      - name: 📦 Download GitHub Stat Images
+        run: python generate_readme.py --download-stats
+        # Downloads fresh SVGs into assets/stats/ so they always render
+        # reliably on GitHub without depending on rate-limited external services
+
+      - name: 🧠 Generate README
         run: python generate_readme.py
 
       - name: 🔧 Configure Git
@@ -35,42 +40,32 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: 🚀 Commit & Push README (Safe Rebase + Retry)
+      - name: 🚀 Commit & Push
         run: |
           set -e
 
-          # Check if README changed
-          if git diff --quiet README.md; then
-            echo "✅ No changes to README.md – skipping commit."
+          git add README.md assets/stats/
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes – skipping commit."
             exit 0
           fi
 
-          git add README.md
-          git commit -m "📝 Auto-update README from script"
+          git commit -m "📝 Auto-update README and stat images"
 
           max_attempts=5
           attempt=1
-          success=0
 
           while [ $attempt -le $max_attempts ]; do
-            echo "🔁 Attempt $attempt to push..."
-
-            # Rebase on latest main
+            echo "🔁 Push attempt $attempt..."
             git pull --rebase --autostash origin main || true
-
-            # Safe push
             if git push --force-with-lease origin HEAD:main; then
-              echo "✅ Push succeeded on attempt $attempt"
-              success=1
-              break
+              echo "✅ Pushed on attempt $attempt"
+              exit 0
             fi
-
-            echo "⚠️ Push failed, retrying..."
             attempt=$((attempt+1))
             sleep 3
           done
 
-          if [ $success -ne 1 ]; then
-            echo "❌ Failed to push after $max_attempts attempts."
-            exit 1
-          fi
+          echo "❌ Failed after $max_attempts attempts."
+          exit 1

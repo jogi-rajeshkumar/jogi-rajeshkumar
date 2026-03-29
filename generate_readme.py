@@ -1,69 +1,83 @@
 """
 generate_readme.py
-Auto-generates a creative, rich README.md for jogi-rajeshkumar's GitHub profile.
-Run locally or via GitHub Actions daily.
+Auto-generates README.md for jogi-rajeshkumar.
+GitHub Stats images are downloaded fresh by the workflow and committed
+into assets/stats/ so they always render reliably on GitHub.
 """
 
 import urllib.request
 import json
-import os
 from datetime import datetime, timezone
 
 GITHUB_USERNAME = "jogi-rajeshkumar"
 
-# ── GitHub Stats Cards ────────────────────────────────────────────────────────
+# ── Download stat images (called by workflow before generate) ─────────────────
 
-# ── GitHub Stats (inlined directly as HTML in the template) ──────────────────
+STAT_IMAGES = {
+    "assets/stats/github-stats.svg":
+        f"https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}"
+        "&show_icons=true&theme=tokyonight&hide_border=true"
+        "&count_private=true&include_all_commits=true",
+    "assets/stats/top-langs.svg":
+        f"https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}"
+        "&layout=compact&theme=tokyonight&hide_border=true&langs_count=8",
+    "assets/stats/trophies.svg":
+        f"https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}"
+        "&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7",
+}
+
+def download_stats():
+    import os
+    os.makedirs("assets/stats", exist_ok=True)
+    for path, url in STAT_IMAGES.items():
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "readme-generator"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = resp.read()
+            with open(path, "wb") as f:
+                f.write(data)
+            print(f"✅ Downloaded {path}")
+        except Exception as e:
+            print(f"⚠️  Could not download {path}: {e}")
 
 # ── Skill Badges ──────────────────────────────────────────────────────────────
 
 def badges():
     badge_list = [
-        # Languages
-        ("Python",         "3776AB", "python",              "white"),
-        ("JavaScript",     "F7DF1E", "javascript",          "black"),
-        ("SQL",            "4479A1", "mysql",               "white"),
-        ("HTML5",          "E34F26", "html5",               "white"),
-        ("CSS3",           "1572B6", "css3",                "white"),
-        # AI/ML
-        ("PyTorch",        "EE4C2C", "pytorch",             "white"),
-        ("TensorFlow",     "FF6F00", "tensorflow",          "white"),
-        ("Keras",          "D00000", "keras",               "white"),
-        ("OpenCV",         "5C3EE8", "opencv",              "white"),
-        ("HuggingFace",    "FFD21E", "huggingface",         "black"),
-        ("scikit--learn",  "F7931E", "scikitlearn",         "white"),
-        # Cloud & DevOps
-        ("AWS",            "232F3E", "amazonwebservices",   "white"),
-        ("Docker",         "2496ED", "docker",              "white"),
-        ("GitHub%20Actions","2088FF","githubactions",       "white"),
-        ("Linux",          "FCC624", "linux",               "black"),
-        # Web
-        ("Django",         "092E20", "django",              "white"),
-        ("Flask",          "000000", "flask",               "white"),
-        ("FastAPI",        "009688", "fastapi",             "white"),
-        # Data
-        ("Apache%20Spark", "E25A1C", "apachespark",         "white"),
-        ("PostgreSQL",     "4169E1", "postgresql",          "white"),
-        ("MongoDB",        "47A248", "mongodb",             "white"),
+        ("Python",           "3776AB", "python",            "white"),
+        ("JavaScript",       "F7DF1E", "javascript",        "black"),
+        ("SQL",              "4479A1", "mysql",             "white"),
+        ("HTML5",            "E34F26", "html5",             "white"),
+        ("CSS3",             "1572B6", "css3",              "white"),
+        ("PyTorch",          "EE4C2C", "pytorch",           "white"),
+        ("TensorFlow",       "FF6F00", "tensorflow",        "white"),
+        ("Keras",            "D00000", "keras",             "white"),
+        ("OpenCV",           "5C3EE8", "opencv",            "white"),
+        ("HuggingFace",      "FFD21E", "huggingface",       "black"),
+        ("scikit--learn",    "F7931E", "scikitlearn",       "white"),
+        ("AWS",              "232F3E", "amazonwebservices", "white"),
+        ("Docker",           "2496ED", "docker",            "white"),
+        ("GitHub%20Actions", "2088FF", "githubactions",     "white"),
+        ("Linux",            "FCC624", "linux",             "black"),
+        ("Django",           "092E20", "django",            "white"),
+        ("Flask",            "000000", "flask",             "white"),
+        ("FastAPI",          "009688", "fastapi",           "white"),
+        ("Apache%20Spark",   "E25A1C", "apachespark",       "white"),
+        ("PostgreSQL",       "4169E1", "postgresql",        "white"),
+        ("MongoDB",          "47A248", "mongodb",           "white"),
     ]
-
     lines = []
     for label, color, logo, font_color in badge_list:
-        badge = f"![{label}](https://img.shields.io/badge/{label}-{color}?style=for-the-badge&logo={logo}&logoColor={font_color})"
-        lines.append(badge)
-
-    # 5 per row
+        lines.append(
+            f'<img src="https://img.shields.io/badge/{label}-{color}'
+            f'?style=for-the-badge&logo={logo}&logoColor={font_color}" alt="{label}"/>'
+        )
     rows = []
     for i in range(0, len(lines), 5):
-        rows.append(" ".join(lines[i:i+5]))
+        rows.append("\n".join(lines[i:i+5]))
     return "\n\n".join(rows)
 
-# ── Profile Views ─────────────────────────────────────────────────────────────
-
-def profile_views():
-    return f'<img src="https://komarev.com/ghpvc/?username={GITHUB_USERNAME}&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>'
-
-# ── Fetch Top Repos via GitHub API ────────────────────────────────────────────
+# ── Fetch top repos ───────────────────────────────────────────────────────────
 
 def fetch_top_repos():
     try:
@@ -82,18 +96,20 @@ def repo_cards(repos):
         return '<td align="center"><em>Repositories loading...</em></td>'
     cells = []
     for repo in repos:
-        name = repo["name"]
-        # Use gh-card.dev - reliable GitHub card renderer
+        name   = repo["name"]
+        desc   = (repo.get("description") or "")[:60]
+        lang   = repo.get("language") or "—"
+        stars  = repo.get("stargazers_count", 0)
+        forks  = repo.get("forks_count", 0)
         cell = (
             f'<td align="center" width="33%">\n'
             f'<a href="https://github.com/{GITHUB_USERNAME}/{name}">\n'
             f'<img src="https://gh-card.dev/repos/{GITHUB_USERNAME}/{name}.svg?fullname=" '
-            f'alt="{name}" width="100%"/>\n'
+            f'width="100%" alt="{name}"/>\n'
             f'</a>\n'
             f'</td>'
         )
         cells.append(cell)
-    # 3 per row
     rows = []
     for i in range(0, len(cells), 3):
         chunk = cells[i:i+3]
@@ -102,23 +118,21 @@ def repo_cards(repos):
         rows.append("<tr>\n" + "\n".join(chunk) + "\n</tr>")
     return "\n".join(rows)
 
-# ── README Builder ────────────────────────────────────────────────────────────
+# ── README builder ────────────────────────────────────────────────────────────
 
 def generate():
-    now = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
+    now  = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
     repos = fetch_top_repos()
 
     readme = f"""<div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rajesh%20Kumar%20Jogi&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Computer%20Vision%20Engineer%20%7C%20AI%20Researcher%20%7C%20MSc%20AI%20Student&descAlignY=55&descSize=18" width="100%"/>
 
-{profile_views()}
+<img src="https://komarev.com/ghpvc/?username={GITHUB_USERNAME}&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
 
 <a href="https://jogi-rajeshkumar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-jogi--rajeshkumar.vercel.app-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 <a href="https://linkedin.com/in/jogi-rajesh-kumar"><img src="https://img.shields.io/badge/LinkedIn-jogi--rajesh--kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:rajeshkumarjogi.2098@gmail.com"><img src="https://img.shields.io/badge/Email-rajeshkumarjogi.2098%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 <a href="https://github.com/{GITHUB_USERNAME}"><img src="https://img.shields.io/badge/GitHub-jogi--rajeshkumar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-
 </div>
 
 ---
@@ -132,27 +146,27 @@ def generate():
 ## 💼 Professional Experience
 
 ### 🟢 AI Agent Developer — Green Environment Ltd, London *(Oct 2025 – Present)*
-- 🤖 Designing intelligent AI-driven systems to enhance operational automation for **ECO4** and **GBIS** initiatives
-- 🌱 Applying Computer Vision & ML to solve real-world **sustainability challenges** within the Green Deal sector
-- 🔗 Collaborating with data engineering and energy assessment teams to improve system efficiency through R&D
+- 🤖 Designing intelligent AI-driven systems to enhance automation for **ECO4** and **GBIS** initiatives
+- 🌱 Applying Computer Vision & ML to real-world **sustainability challenges** within the Green Deal sector
+- 🔗 Collaborating with data engineering and energy assessment teams through R&D
 
 ### 🔵 Computer Vision Software Engineer (Team Lead) — Boolean Brain Technologies *(Dec 2023 – Aug 2024)*
-- ⚡ Led a team integrating Python-based ML modules into production, reducing **API response latency by 25%**
+- ⚡ Led a team integrating Python ML modules into production, reducing **API latency by 25%**
 - 🔧 Refactored legacy inference model code, boosting **system throughput by 1.6×**
-- 🌐 Developed customised web applications using Django, decreasing **support tickets by 30%**
+- 🌐 Developed customised Django web applications, decreasing **support tickets by 30%**
 
 ### 🟠 Computer Vision Engineer — Timing Technologies India Pvt. Ltd *(May 2023 – Nov 2023)*
-- 🏛️ Built **facial recognition** and Bib Detection applications for Government Selections across Indian states
+- 🏛️ Built **facial recognition** and Bib Detection apps for Government Selections across Indian states
 - 🔒 Deployed a secure examination browser on **100+ client devices** using PyInstaller
 - 🎯 Fine-tuned **YOLOv5** and **ResNet-50** for edge deployment, achieving **>90% precision**
 
 ### 🟡 AI/ML Intern — ThoughtGreen Technologies *(Jan 2023 – Apr 2023)*
-- 📚 Researched Bib detection algorithms; trained detection models with **PyTorch** and **TensorFlow**
+- 📚 Researched Bib detection algorithms; trained models with **PyTorch** and **TensorFlow**
 - 🔬 Executed comprehensive model testing, evaluation, and hyperparameter optimisation
 
 ### 🔴 Freelance ML Developer — Independent *(2020 – 2022)*
-- 👤 Designed biometric facial attendance and fraud detection systems using advanced ML techniques
-- 🛠️ Delivered bespoke web-based tools for clients in **finance, transportation, and administration**
+- 👤 Designed biometric facial attendance and fraud detection systems
+- 🛠️ Delivered bespoke tools for clients in **finance, transportation, and administration**
 
 ---
 
@@ -176,17 +190,21 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 | Project | Description | Stack |
 |---------|-------------|-------|
 | 🧠 **eeg-fl-emotion** | Privacy-preserving emotion recognition via Federated Learning | PyTorch, FedAvg, Edge Devices |
-| 🛰️ **Satellite Object Recognition** | Memory-efficient deep learning for fine-grained object classification | Keras, CNNs, FAIR1M Dataset |
-| 🎭 **Real-Time Face Analysis** | Live browser-based age, emotion & gender detection from video | Flask, PyTorch, face-api.js |
+| 🛰️ **Satellite Object Recognition** | Memory-efficient deep learning for fine-grained classification | Keras, CNNs, FAIR1M Dataset |
+| 🎭 **Real-Time Face Analysis** | Live browser-based age, emotion & gender detection | Flask, PyTorch, face-api.js |
 | 👁️ **Real-Time CV Monitoring** | Eye state detection & gesture-based volume control | MediaPipe, OpenCV, Dlib |
 | 📈 **Financial Portfolio Optimizer** | Stock market optimisation & automated data pipelines | Pandas, NumPy |
-| 🖥️ **DevOps Server Monitor** | Server uptime monitor with real-time Telegram alerts | Python, Telegram API |
+| 🖥️ **DevOps Server Monitor** | Server uptime monitor with Telegram alerts | Python, Telegram API |
 
 ---
 
 ## 🛠️ Technical Arsenal
 
+<div align="center">
+
 {badges()}
+
+</div>
 
 ---
 
@@ -196,37 +214,25 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 <table>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/{GITHUB_USERNAME}">
-<img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" width="100%"/>
-</a>
+<a href="https://github.com/{GITHUB_USERNAME}"><img src="assets/stats/github-stats.svg" alt="GitHub Stats" width="100%"/></a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/{GITHUB_USERNAME}">
-<img src="https://streak-stats.demolab.com/?user={GITHUB_USERNAME}&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="100%"/>
-</a>
+<a href="https://github.com/{GITHUB_USERNAME}"><img src="https://streak-stats.demolab.com/?user={GITHUB_USERNAME}&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="100%"/></a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/{GITHUB_USERNAME}">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=jogi-rajeshkumar" alt="Top Languages" width="100%"/>
-</a>
+<a href="https://github.com/{GITHUB_USERNAME}"><img src="assets/stats/top-langs.svg" alt="Top Languages" width="100%"/></a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/{GITHUB_USERNAME}">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution+Graph" alt="Activity Graph" width="100%"/>
-</a>
+<a href="https://github.com/{GITHUB_USERNAME}"><img src="https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%"/></a>
 </td>
 </tr>
 </table>
 </div>
 
-<br/>
-
 <div align="center">
-<a href="https://github.com/{GITHUB_USERNAME}">
-<img src="https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
-</a>
+<a href="https://github.com/{GITHUB_USERNAME}"><img src="assets/stats/trophies.svg" alt="GitHub Trophies" width="100%"/></a>
 </div>
 
 ---
@@ -260,29 +266,28 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📬 Let's Connect
 
 <div align="center">
-
 <a href="https://jogi-rajeshkumar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit_Now-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 <a href="https://linkedin.com/in/jogi-rajesh-kumar"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/{GITHUB_USERNAME}"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="mailto:rajeshkumarjogi.2098@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-
 </div>
 
 ---
 
 <div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
 *🔄 README auto-updated on **{now}** via GitHub Actions*
-
 </div>
 """
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme)
-    print(f"✅ README.md generated successfully at {now}")
+    print(f"✅ README.md generated at {now}")
 
 
 if __name__ == "__main__":
+    import sys
+    if "--download-stats" in sys.argv:
+        download_stats()
     generate()
