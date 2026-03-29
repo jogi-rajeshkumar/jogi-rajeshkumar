@@ -47,7 +47,8 @@ def generate():
 *This README is automatically updated daily via GitHub Actions.*
 """
 
-    with open("README.md", "w") as f:
+    # with open("README.md", "w") as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme)
     print("✅ README.md generated successfully.")
 
