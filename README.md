@@ -112,25 +112,35 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 <table>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/jogi-rajeshkumar"><img src="assets/stats/github-stats.svg" alt="GitHub Stats" width="100%"/></a>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="assets/stats/github-stats.svg" alt="GitHub Stats" width="100%"/>
+</a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/jogi-rajeshkumar"><img src="https://streak-stats.demolab.com/?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="100%"/></a>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://streak-stats.demolab.com/?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="100%"/>
+</a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/jogi-rajeshkumar"><img src="assets/stats/top-langs.svg" alt="Top Languages" width="100%"/></a>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="assets/stats/top-langs.svg" alt="Top Languages" width="100%"/>
+</a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/jogi-rajeshkumar"><img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%"/></a>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%"/>
+</a>
 </td>
 </tr>
 </table>
 </div>
 
 <div align="center">
-<a href="https://github.com/jogi-rajeshkumar"><img src="assets/stats/trophies.svg" alt="GitHub Trophies" width="100%"/></a>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="assets/stats/achievements.svg" alt="GitHub Achievements" width="100%"/>
+</a>
 </div>
 
 ---
@@ -208,5 +218,5 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **29 March 2026, 05:26 UTC** via GitHub Actions*
+*🔄 README auto-updated on **29 March 2026, 05:31 UTC** via GitHub Actions*
 </div>
