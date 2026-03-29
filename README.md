@@ -91,17 +91,20 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📊 GitHub Analytics
 
 <div align="center">
+<table><tr><td align="center" width="50%">
+<img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" alt="GitHub Stats"/>
+</td><td align="center" width="50%">
+<img src="https://streak-stats.demolab.com?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" width="100%" alt="GitHub Streak"/>
+</td></tr>
+<tr><td align="center" width="50%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="100%" alt="Top Languages"/>
+</td><td align="center" width="50%">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph"/>
+</td></tr></table>
+</div>
 
-<img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="180"/>
-
-<img src="https://streak-stats.demolab.com?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="180"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="180"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophy" width="100%"/>
-
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10" width="100%" alt="Trophies"/>
 </div>
 
 ---
@@ -109,13 +112,9 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📌 Featured Repositories
 
 <div align="center">
-
-<a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Artificial-Intelligence-Using-Python&theme=tokyonight&hide_border=true" alt="Artificial-Intelligence-Using-Python" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Stock_Market_Portfolio_Optimization&theme=tokyonight&hide_border=true" alt="Stock_Market_Portfolio_Optimization" height="130"/></a>
-
-<a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Volume-control-with-hand-detection&theme=tokyonight&hide_border=true" alt="Volume-control-with-hand-detection" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/facial_detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=facial_detection&theme=tokyonight&hide_border=true" alt="facial_detection" height="130"/></a>
-
-<a href="https://github.com/jogi-rajeshkumar/AI-AVATAR"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=AI-AVATAR&theme=tokyonight&hide_border=true" alt="AI-AVATAR" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/Emotion-analysis"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Emotion-analysis&theme=tokyonight&hide_border=true" alt="Emotion-analysis" height="130"/></a>
-
+<table><tr>
+<td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Artificial-Intelligence-Using-Python&theme=tokyonight&hide_border=true" width="100%" alt="Artificial-Intelligence-Using-Python"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Stock_Market_Portfolio_Optimization&theme=tokyonight&hide_border=true" width="100%" alt="Stock_Market_Portfolio_Optimization"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Volume-control-with-hand-detection&theme=tokyonight&hide_border=true" width="100%" alt="Volume-control-with-hand-detection"/></a></td></tr><tr><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/facial_detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=facial_detection&theme=tokyonight&hide_border=true" width="100%" alt="facial_detection"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/AI-AVATAR"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=AI-AVATAR&theme=tokyonight&hide_border=true" width="100%" alt="AI-AVATAR"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Emotion-analysis"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Emotion-analysis&theme=tokyonight&hide_border=true" width="100%" alt="Emotion-analysis"/></a></td>
+</tr></table>
 </div>
 
 ---
@@ -153,6 +152,6 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **29 March 2026, 05:16 UTC** via GitHub Actions*
+*🔄 README auto-updated on **29 March 2026, 05:19 UTC** via GitHub Actions*
 
 </div>
