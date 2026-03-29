@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rajesh%20Kumar%20Jogi&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Computer%20Vision%20Engineer%20%7C%20AI%20Researcher%20%7C%20MSc%20AI%20Student&descAlignY=55&descSize=18" width="100%"/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=jogi-rajeshkumar&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS)
+<img src="https://komarev.com/ghpvc/?username=jogi-rajeshkumar&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
 [![Portfolio](https://img.shields.io/badge/Portfolio-jogi--rajeshkumar.vercel.app-0891b2?style=for-the-badge&logo=vercel&logoColor=white)](https://jogi-rajeshkumar.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jogi--rajesh--kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jogi-rajesh-kumar)
 [![Email](https://img.shields.io/badge/Email-rajeshkumarjogi.2098%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajeshkumarjogi.2098@gmail.com)
@@ -91,15 +91,15 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true)
+<img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="180"/>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true)
+<img src="https://streak-stats.demolab.com?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="180"/>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="180"/>
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="100%"/>
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&row=1&column=7)
+<img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophy" width="100%"/>
 
 </div>
 
@@ -109,11 +109,11 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <div align="center">
 
-[![Artificial-Intelligence-Using-Python](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Artificial-Intelligence-Using-Python&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python) [![Stock_Market_Portfolio_Optimization](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Stock_Market_Portfolio_Optimization&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization)
+<a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Artificial-Intelligence-Using-Python&theme=tokyonight&hide_border=true" alt="Artificial-Intelligence-Using-Python" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Stock_Market_Portfolio_Optimization&theme=tokyonight&hide_border=true" alt="Stock_Market_Portfolio_Optimization" height="130"/></a>
 
-[![Volume-control-with-hand-detection](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Volume-control-with-hand-detection&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection) [![facial_detection](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=facial_detection&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/facial_detection)
+<a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Volume-control-with-hand-detection&theme=tokyonight&hide_border=true" alt="Volume-control-with-hand-detection" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/facial_detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=facial_detection&theme=tokyonight&hide_border=true" alt="facial_detection" height="130"/></a>
 
-[![AI-AVATAR](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=AI-AVATAR&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/AI-AVATAR) [![Emotion-analysis](https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Emotion-analysis&theme=tokyonight&hide_border=true)](https://github.com/jogi-rajeshkumar/Emotion-analysis)
+<a href="https://github.com/jogi-rajeshkumar/AI-AVATAR"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=AI-AVATAR&theme=tokyonight&hide_border=true" alt="AI-AVATAR" height="130"/></a>&nbsp;<a href="https://github.com/jogi-rajeshkumar/Emotion-analysis"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Emotion-analysis&theme=tokyonight&hide_border=true" alt="Emotion-analysis" height="130"/></a>
 
 </div>
 
@@ -152,6 +152,6 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **29 March 2026, 05:10 UTC** via GitHub Actions*
+*🔄 README auto-updated on **29 March 2026, 05:13 UTC** via GitHub Actions*
 
 </div>

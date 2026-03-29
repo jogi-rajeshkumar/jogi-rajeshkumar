@@ -14,19 +14,35 @@ GITHUB_USERNAME = "jogi-rajeshkumar"
 # ── GitHub Stats Cards ────────────────────────────────────────────────────────
 
 def github_stats_card():
-    return f"![GitHub Stats](https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true)"
+    return (
+        f'<img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}'
+        f'&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" '
+        f'alt="GitHub Stats" height="180"/>'
+    )
 
 def github_streak():
-    return f"![GitHub Streak](https://streak-stats.demolab.com?user={GITHUB_USERNAME}&theme=tokyonight&hide_border=true)"
+    return (
+        f'<img src="https://streak-stats.demolab.com?user={GITHUB_USERNAME}'
+        f'&theme=tokyonight&hide_border=true" '
+        f'alt="GitHub Streak" height="180"/>'
+    )
 
 def top_langs_card():
-    return f"![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)"
+    return (
+        f'<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}'
+        f'&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" '
+        f'alt="Top Languages" height="180"/>'
+    )
 
 def activity_graph():
-    return f"![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=tokyo-night&hide_border=true&area=true)"
+    return (
+        f'<img src="https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}'
+        f'&theme=tokyo-night&hide_border=true&area=true" '
+        f'alt="Activity Graph" width="100%"/>'
+    )
 
 def profile_trophy():
-    return f"![Trophy](https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}&theme=tokyonight&no-frame=true&row=1&column=7)"
+    return f'<img src="https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophy" width="100%"/>'
 
 # ── Skill Badges ──────────────────────────────────────────────────────────────
 
@@ -74,7 +90,7 @@ def badges():
 # ── Profile Views ─────────────────────────────────────────────────────────────
 
 def profile_views():
-    return f"![Profile Views](https://komarev.com/ghpvc/?username={GITHUB_USERNAME}&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS)"
+    return f'<img src="https://komarev.com/ghpvc/?username={GITHUB_USERNAME}&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>'
 
 # ── Fetch Top Repos via GitHub API ────────────────────────────────────────────
 
@@ -97,14 +113,16 @@ def repo_cards(repos):
     for repo in repos:
         name = repo["name"]
         card = (
-            f"[![{name}](https://github-readme-stats.vercel.app/api/pin/"
-            f"?username={GITHUB_USERNAME}&repo={name}&theme=tokyonight&hide_border=true)]"
-            f"(https://github.com/{GITHUB_USERNAME}/{name})"
+            f'<a href="https://github.com/{GITHUB_USERNAME}/{name}">'
+            f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USERNAME}'
+            f'&repo={name}&theme=tokyonight&hide_border=true" alt="{name}" height="130"/>'
+            f'</a>'
         )
         cards.append(card)
+    # Two per row with a space between
     rows = []
     for i in range(0, len(cards), 2):
-        rows.append(" ".join(cards[i:i+2]))
+        rows.append("&nbsp;".join(cards[i:i+2]))
     return "\n\n".join(rows)
 
 # ── README Builder ────────────────────────────────────────────────────────────
