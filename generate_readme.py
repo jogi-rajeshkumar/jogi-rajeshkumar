@@ -83,30 +83,24 @@ def repo_cards(repos):
     cells = []
     for repo in repos:
         name = repo["name"]
-        desc = repo.get("description") or ""
-        stars = repo.get("stargazers_count", 0)
-        lang = repo.get("language") or ""
+        # Use gh-card.dev - reliable GitHub card renderer
         cell = (
-            f'<td align="center" width="33%">'
-            f'<a href="https://github.com/{GITHUB_USERNAME}/{name}">'
-            f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USERNAME}'
-            f'&repo={name}&theme=tokyonight&hide_border=true" width="100%" alt="{name}"/>'
-            f'</a></td>'
+            f'<td align="center" width="33%">\n'
+            f'<a href="https://github.com/{GITHUB_USERNAME}/{name}">\n'
+            f'<img src="https://gh-card.dev/repos/{GITHUB_USERNAME}/{name}.svg?fullname=" '
+            f'alt="{name}" width="100%"/>\n'
+            f'</a>\n'
+            f'</td>'
         )
         cells.append(cell)
     # 3 per row
     rows = []
     for i in range(0, len(cells), 3):
-        row_cells = cells[i:i+3]
-        # pad last row if needed
-        while len(row_cells) < 3:
-            row_cells.append('<td width="33%"></td>')
-        rows.append("".join(row_cells) + "</tr><tr>")
-    # Remove trailing </tr><tr>
-    result = "".join(rows)
-    if result.endswith("</tr><tr>"):
-        result = result[:-len("</tr><tr>")]
-    return result
+        chunk = cells[i:i+3]
+        while len(chunk) < 3:
+            chunk.append('<td width="33%"></td>')
+        rows.append("<tr>\n" + "\n".join(chunk) + "\n</tr>")
+    return "\n".join(rows)
 
 # ── README Builder ────────────────────────────────────────────────────────────
 
@@ -199,20 +193,40 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📊 GitHub Analytics
 
 <div align="center">
-<table><tr><td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" alt="GitHub Stats"/>
-</td><td align="center" width="50%">
-<img src="https://streak-stats.demolab.com?user={GITHUB_USERNAME}&theme=tokyonight&hide_border=true" width="100%" alt="GitHub Streak"/>
-</td></tr>
-<tr><td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="100%" alt="Top Languages"/>
-</td><td align="center" width="50%">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph"/>
-</td></tr></table>
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/{GITHUB_USERNAME}">
+<img src="https://github-readme-stats.vercel.app/api?username={GITHUB_USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" width="100%"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/{GITHUB_USERNAME}">
+<img src="https://streak-stats.demolab.com/?user={GITHUB_USERNAME}&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="100%"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/{GITHUB_USERNAME}">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={GITHUB_USERNAME}&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=jogi-rajeshkumar" alt="Top Languages" width="100%"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/{GITHUB_USERNAME}">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username={GITHUB_USERNAME}&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution+Graph" alt="Activity Graph" width="100%"/>
+</a>
+</td>
+</tr>
+</table>
 </div>
 
+<br/>
+
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10" width="100%" alt="Trophies"/>
+<a href="https://github.com/{GITHUB_USERNAME}">
+<img src="https://github-profile-trophy.vercel.app/?username={GITHUB_USERNAME}&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
+</a>
 </div>
 
 ---
@@ -220,9 +234,9 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📌 Featured Repositories
 
 <div align="center">
-<table><tr>
+<table>
 {repo_cards(repos)}
-</tr></table>
+</table>
 </div>
 
 ---

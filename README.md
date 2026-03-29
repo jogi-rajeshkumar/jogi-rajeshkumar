@@ -91,20 +91,40 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📊 GitHub Analytics
 
 <div align="center">
-<table><tr><td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" alt="GitHub Stats"/>
-</td><td align="center" width="50%">
-<img src="https://streak-stats.demolab.com?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true" width="100%" alt="GitHub Streak"/>
-</td></tr>
-<tr><td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="100%" alt="Top Languages"/>
-</td><td align="center" width="50%">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph"/>
-</td></tr></table>
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://github-readme-stats.vercel.app/api?username=jogi-rajeshkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" width="100%"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://streak-stats.demolab.com/?user=jogi-rajeshkumar&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="100%"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jogi-rajeshkumar&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=jogi-rajeshkumar" alt="Top Languages" width="100%"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jogi-rajeshkumar&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution+Graph" alt="Activity Graph" width="100%"/>
+</a>
+</td>
+</tr>
+</table>
 </div>
 
+<br/>
+
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10" width="100%" alt="Trophies"/>
+<a href="https://github.com/jogi-rajeshkumar">
+<img src="https://github-profile-trophy.vercel.app/?username=jogi-rajeshkumar&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
+</a>
 </div>
 
 ---
@@ -112,9 +132,42 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 ## 📌 Featured Repositories
 
 <div align="center">
-<table><tr>
-<td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Artificial-Intelligence-Using-Python&theme=tokyonight&hide_border=true" width="100%" alt="Artificial-Intelligence-Using-Python"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Stock_Market_Portfolio_Optimization&theme=tokyonight&hide_border=true" width="100%" alt="Stock_Market_Portfolio_Optimization"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Volume-control-with-hand-detection&theme=tokyonight&hide_border=true" width="100%" alt="Volume-control-with-hand-detection"/></a></td></tr><tr><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/facial_detection"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=facial_detection&theme=tokyonight&hide_border=true" width="100%" alt="facial_detection"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/AI-AVATAR"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=AI-AVATAR&theme=tokyonight&hide_border=true" width="100%" alt="AI-AVATAR"/></a></td><td align="center" width="33%"><a href="https://github.com/jogi-rajeshkumar/Emotion-analysis"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jogi-rajeshkumar&repo=Emotion-analysis&theme=tokyonight&hide_border=true" width="100%" alt="Emotion-analysis"/></a></td>
-</tr></table>
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/Artificial-Intelligence-Using-Python">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/Artificial-Intelligence-Using-Python.svg?fullname=" alt="Artificial-Intelligence-Using-Python" width="100%"/>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/Stock_Market_Portfolio_Optimization.svg?fullname=" alt="Stock_Market_Portfolio_Optimization" width="100%"/>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/Volume-control-with-hand-detection">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/Volume-control-with-hand-detection.svg?fullname=" alt="Volume-control-with-hand-detection" width="100%"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/facial_detection">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/facial_detection.svg?fullname=" alt="facial_detection" width="100%"/>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/AI-AVATAR">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/AI-AVATAR.svg?fullname=" alt="AI-AVATAR" width="100%"/>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/jogi-rajeshkumar/Emotion-analysis">
+<img src="https://gh-card.dev/repos/jogi-rajeshkumar/Emotion-analysis.svg?fullname=" alt="Emotion-analysis" width="100%"/>
+</a>
+</td>
+</tr>
+</table>
 </div>
 
 ---
@@ -152,6 +205,6 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **29 March 2026, 05:19 UTC** via GitHub Actions*
+*🔄 README auto-updated on **29 March 2026, 05:21 UTC** via GitHub Actions*
 
 </div>
