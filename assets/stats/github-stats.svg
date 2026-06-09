@@ -22,7 +22,7 @@
 
   <!-- Followers -->
   <text x="25"  y="140" font-family="Segoe UI,sans-serif" font-size="13" fill="#8b949e">👥 Followers</text>
-  <text x="230" y="140" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="#e6edf3">13</text>
+  <text x="230" y="140" font-family="Segoe UI,sans-serif" font-size="13" font-weight="700" fill="#e6edf3">12</text>
 
   <!-- Repos -->
   <text x="25"  y="170" font-family="Segoe UI,sans-serif" font-size="13" fill="#8b949e">📦 Public Repos</text>
