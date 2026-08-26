@@ -218,5 +218,5 @@ University of East London, London, UK | *Sept 2024 – May 2026*
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-*🔄 README auto-updated on **25 August 2026, 06:58 UTC** via GitHub Actions*
+*🔄 README auto-updated on **26 August 2026, 06:59 UTC** via GitHub Actions*
 </div>
